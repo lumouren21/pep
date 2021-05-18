@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <title>我的收藏</title>
+	  <link rel="stylesheet" href="css/bootstrap.css">
+	  <link rel="stylesheet" href="css/normalize.css">
+	  <link rel="stylesheet" href="css/common_function.css">
+	  <link rel="stylesheet" href="css/myAttention.css">
+	  <link rel="stylesheet" href="css/mySource.css">
+	  <link rel="stylesheet" href="css/myCollect.css">
+	  <link href="https://cdn.bootcss.com/gijgo/1.9.13/combined/css/gijgo.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<!--头部-->
+		<header id="cbs_header">
+		  <div class="container-fluid top_content">
+		    <div class="row">
+				<div class="col-5 offset-lg-1 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start">
+					<a href="index.html">
+						<img src="images/index/logo.png">
+						<div class="top_content_word">基础资源统一发放平台</div>
+					</a>
+				  </div>
+				  <div class="col-lg-4 d-lg-block top_seach col-5">
+					<div class="top_input d-flex justify-content-end">
+					  <input type="text" placeholder="请输入关键字" data-provide="typeahead" autocomplete="off" id="searchWords">
+					  <div class="top_search d-flex align-items-center">
+						<img src="images/index/search.png" alt="">
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile">
+					<div class="top_profile_img">
+					  <img src="images/index/myhead.jpg" alt="">
+				  </div>
+		        <div class="dropdown show top_arrows">
+		          <img src="images/index/triangle.png" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+		            <div class="dropdown_content">
+		              <img src="images/index/source.png" alt="">
+		              <a class="dropdown-item" href="mySource.html">我的资源</a>
+		            </div>
+		            <div class="dropdown_content">
+		              <img src="images/index/attention.png" alt="">
+		              <a class="dropdown-item" href="myAttention.html">我的关注</a>
+		            </div>
+		            <div class="dropdown_content">
+		              <img src="images/index/collect.png" alt="">
+		              <a class="dropdown-item" href="myCollect.html">我的收藏</a>
+		            </div>
+		            <div class="dropdown_content">
+		              <img src="images/index/record.png" alt="">
+		              <a class="dropdown-item" href="MyRecord.html">我的记录</a>
+		            </div>
+		            <div class="dropdown_content">
+		              <img src="images/index/download.png" alt="">
+		              <a class="dropdown-item" href="myDownload.html">我的下载</a>
+		            </div>
+		            <div class="dropdown_content top_last_word">
+		              <img src="images/index/logout.png" alt="">
+		              <a class="dropdown-item" href="#">退出登录</a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</header>
+		<!--导航栏-->
+		<section id="cbs_nav">
+		  <div class="container-fluid bottom_content">
+		    <div class="row">
+		      <div class="offset-2 col-4 col-lg-4 offset-lg-3 nav_box">
+		        <ul class="d-flex text-center bottom_ul">
+		          <li><a href="index.html">首页</a></li>
+		          <li class="position-relative">
+		            专区
+		            <ul class="nav_ul show_drop">
+						<li><a href="material.html" class="nav_a">基础资源库</a></li>
+						<li><a href="material.html" class="nav_a">基础资源库</a></li>
+						<li><a href="material.html" class="nav_a">基础资源库</a></li>
+		            </ul>
+		          </li>
+		          <li><a href="sourceStatistics.html">资源统计</a></li>
+		        </ul>
+			  </div>
+			  <div class="offset-lg-1 col-lg-8 d-lg-block top_seach0 col-5">
+					<div class="top_input d-flex justify-content-end">
+						<input type="text" placeholder="请输入关键字" data-provide="typeahead" autocomplete="off" id="searchWordsM">
+						<div class="top_search d-flex align-items-center">
+						<img src="images/index/search.png" alt="">
+						</div>
+					</div>
+				</div>
+				<button onclick="open_menu()" type="button" class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile hamburger is-closed animated fadeInLeft">
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
+				</button>
+		    </div>
+		  </div>
+		</section>
+		<!-- 手机导航 -->
+		<div class="overlay" onclick="close_menu()"></div>
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-box" id="sidebar-wrapper" role="navigation">
+			<ul class="nav sidebar-nav">
+				<li class="sidebar-brand">
+					<a href="#">
+					   菜单
+					</a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-fw fa-home"></i> 首页</a>
+				</li>
+				<li class="dropdown">
+				  <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 专区 <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="material.html">基础资源库</a></li>
+					<li><a href="material.html">基础资源库</a></li>
+					<li><a href="material.html">基础资源库</a></li>
+				  </ul>
+				</li>
+				<li>
+					<a href="sourceStatistics.html"><i class="fa fa-fw fa-bank"></i>资源统计</a>
+				</li>
+			</ul>
+		</nav>
+		<!--收藏记录 -->
+		<section id="cbs_source">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="offset-3 col-8 source_top">
+						<div class="source_search" style="visibility:hidden">
+						  <input type="text" placeholder="请输入关键字">
+						  <div class="source_search_img">
+						    <img src="images/mySource/source_search.png" alt="">
+						  </div>
+						</div>
+						<div style="display: flex;">
+							<div class="main_function order_click">
+								<div class="main_text">排序</div>
+								<div><img src="images/search/order.png"></div>
+							</div>
+							<div class="fliter_word">
+								<div class="fliter_text">过滤</div>
+								<div class="collect_search_form search_form_hidden">
+									<input type="text" placeholder="书名">
+									<input type="text" placeholder="书号">
+									<input type="text" placeholder="责编">
+									<input id="datepicker" placeholder="收藏日期">
+									<div class="fliter_button">
+										<div class="filter_cancle">取消</div>
+										<div class="filter_sure">确认检索</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="offset-1 col-10 attention_content">
+						<div class="attention_left">
+							<ul class="attention_left_top">
+								<li><img src="images/index/myhead.jpg" alt=""></li>
+								<li>静静的ID</li>
+							</ul>
+							<ul class="attention_left_bottom">
+									<li >
+										<a href="mySource.html">
+											<div><img src="images/myAttention/left_nav_0.png" ></div>
+											<div>我的资源</div>
+										</a>
+									</li>
+									<li >
+										<a href="myAttention.html">
+											<div><img src="images/myAttention/left_nav_1.png" ></div>
+											<div>我的关注</div>
+										</a>
+									</li>
+									<li class="active_m">
+										<a href="myCollect.html">
+											<div><img src="images/myAttention/left_nav_2_active.png" ></div>
+											<div>我的收藏</div>
+										</a>
+									</li>
+									<li>
+										<a href="myRecord.html">
+											<div><img src="images/myAttention/left_nav_3.png" ></div>
+											<div>我的记录</div>
+										</a>
+									</li>
+									<li>
+										<a href="myDownload.html">
+											<div><img src="images/myAttention/left_nav_4.png" ></div>
+											<div>我的下载</div>
+										</a>
+									</li>
+								</ul>
+						</div>
+						<div class="attention_right">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--分页-->
+		<section id="cbs_page">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center justify-content-center pages_info">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--尾部-->
+	<!-- 	<footer id="cbs_footer">
+		  <div class="container-fluid footer_content d-none d-md-block">
+		    <div class="row">
+		      <div class="footer_text d-flex align-items-center justify-content-center">
+		        www.copyright.com 京ICP备09080213号
+		      </div>
+		    </div>
+		  </div>
+		</footer>	 -->
+		<div class="mask_layer mask_hidden">
+			<div class="pop_window">
+				<h2>是否删除?</h2>
+				<div class="pop_btn">
+					<div class="pop_cancle">取消</div>
+					<div class="pop_del">删除</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap3-typeahead.js"></script>
+		<script src="js/index.js"></script>
+		<script src="https://cdn.bootcss.com/gijgo/1.9.13/combined/js/gijgo.min.js"></script>
+		<script src="https://cdn.bootcss.com/gijgo/1.9.13/combined/js/messages/messages.zh-cn.min.js"></script>
+		<script src="js/myCollect.js"></script>
+	</body>
+</html>
+

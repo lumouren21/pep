@@ -1,0 +1,130 @@
+.justify-content-lg-start a{
+	display: contents;
+  }
+#cbs_type {
+	width: 100%;
+	padding-top: 54px;
+	background-color: #F8F8F8;
+}
+.type_main {
+	padding: 16px;
+	background-color: #fff;
+}
+.type_main_statistics {
+	font-size: 19px;
+	font-weight: bold;
+	color: #394A51;
+	border-left: 3px solid #FA7D00;
+	padding-left: 8px;
+}
+#cbs_level {
+	width: 100%;
+	padding-top: 54px;
+	background-color: #F8F8F8;
+}
+#cbs_subject {
+	width: 100%;
+	padding-top: 54px;
+	background-color: #F8F8F8;
+}
+@media (min-width: 1200px) {
+	.subject_main {
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+	.subject_main_left {
+		width: 49%;
+		padding: 16px;
+		background-color: #fff;
+	}
+	.subject_main_right  {
+		width: 49%;
+		padding: 16px;
+		background-color: #fff;
+	}
+	.type_main_graph {
+		display: flex;
+		align-items: center;
+		/* justify-content: space-between; */
+		width: 100%;
+	}
+	.type_main_graph_detail {
+	/* 	display: flex;
+		justify-content: center; */
+		width: 48%;
+		height:400px;
+	}
+}
+@media (max-width: 1200px) {
+	.subject_main {
+		justify-content: space-between;
+		padding: 0;
+	}
+	.subject_main_left {
+		width: 98%;
+		padding: 16px;
+		background-color: #fff;
+	}
+	.subject_main_right  {
+		width: 98%;
+		padding: 16px;
+		background-color: #fff;
+	}
+	.type_main_graph {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.type_main_graph_detail {
+	/* 	display: flex;
+		justify-content: center; */
+		width: 80%;
+		height:400px;
+	}
+}
+
+#cbs_subject {
+	width: 100%;
+	padding: 54px 0;
+	background-color: #F8F8F8;
+}
+.subject_main_text {
+	font-size: 19px;
+	font-weight: bold;
+	color: #394A51;
+	border-left: 3px solid #FA7D00;
+	padding-left: 8px;
+}
+.subject_main_left_legend_data {
+	display: flex;
+	margin-left: 10%;
+	margin-top: 6px;
+	align-items: center;
+}
+.left_legend_data_text {
+	width: 15%;
+	font-size: 9px;
+	font-weight: 400;
+	line-height: 13px;
+	color: #000000;
+	text-align: right;
+}
+.left_legend_data_num {
+	width: 10%;
+	font-size: 9px;
+	font-weight: 400;
+	line-height: 13px;
+	color: #000000;
+	text-align: left;
+}
+.left_legend_data_info {
+	width: 75%;
+	margin: 0 6px;
+}
+.left_legend_data_info_color {
+	background-color: #67B6B3;
+	height: 10px;
+}

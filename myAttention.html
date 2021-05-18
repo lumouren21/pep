@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <title>我的关注</title>
+	  <link rel="stylesheet" href="css/bootstrap.css">
+	  <link rel="stylesheet" href="css/normalize.css">
+	  <link rel="stylesheet" href="css/common_function.css">
+	  <link rel="stylesheet" href="css/myAttention.css">
+
+	</head>
+	<body>
+		<!--头部-->
+		<header id="cbs_header">
+		  <div class="container-fluid top_content">
+		    <div class="row">
+				<div class="col-5 offset-lg-1 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start">
+					<a href="index.html">
+						<img src="images/index/logo.png">
+						<div class="top_content_word">基础资源统一发放平台</div>
+					</a>
+				  </div>
+				  <div class="col-lg-4 d-lg-block top_seach col-5">
+					<div class="top_input d-flex justify-content-end">
+					  <input type="text" placeholder="请输入关键字" data-provide="typeahead" autocomplete="off" id="searchWords">
+					  <div class="top_search d-flex align-items-center">
+						<img src="images/index/search.png" alt="">
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile">
+					<div class="top_profile_img">
+					  <img src="images/index/myhead.jpg" alt="">
+				  </div>
+		        <div class="dropdown show top_arrows">
+		          <img src="images/index/triangle.png" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+		            <div class="dropdown_content">
+		              <img src="images/index/source.png" alt="">
+		              <a class="dropdown-item" href="mySource.html">我的资源</a>
+		            </div>
+		            <div class="dropdown_content">
+		              <img src="images/index/attention.png" alt="">
+		              <a class="dropdown-item" href="myAttention.html">我的关注</a>
+		            </div>
+		            <div class="dropdown_content">
+		              <img src="images/index/collect.png" alt="">
+		              <a class="dropdown-item" href="myCollect.html">我的收藏</a>
+		            </div>
+		            <div class="dropdown_content">
+		              <img src="images/index/record.png" alt="">
+		              <a class="dropdown-item" href="MyRecord.html">我的记录</a>
+		            </div>
+		            <div class="dropdown_content">
+		              <img src="images/index/download.png" alt="">
+		              <a class="dropdown-item" href="myDownload.html">我的下载</a>
+		            </div>
+		            <div class="dropdown_content top_last_word">
+		              <img src="images/index/logout.png" alt="">
+		              <a class="dropdown-item" href="#">退出登录</a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</header>
+		<!--导航栏-->
+		<section id="cbs_nav">
+		  <div class="container-fluid bottom_content">
+		    <div class="row">
+		      <div class="offset-2 col-4 col-lg-4 offset-lg-3 nav_box">
+		        <ul class="d-flex text-center bottom_ul">
+		          <li><a href="index.html">首页</a></li>
+		          <li class="position-relative">
+		            专区
+		            <ul class="nav_ul show_drop">
+						<li><a href="material.html" class="nav_a">基础资源库</a></li>
+						<li><a href="material.html" class="nav_a">基础资源库</a></li>
+						<li><a href="material.html" class="nav_a">基础资源库</a></li>
+		            </ul>
+		          </li>
+		          <li><a href="sourceStatistics.html">资源统计</a></li>
+		        </ul>
+			  </div>
+			  <div class="offset-lg-1 col-lg-8 d-lg-block top_seach0 col-5">
+					<div class="top_input d-flex justify-content-end">
+						<input type="text" placeholder="请输入关键字" data-provide="typeahead" autocomplete="off" id="searchWordsM">
+						<div class="top_search d-flex align-items-center">
+						<img src="images/index/search.png" alt="">
+						</div>
+					</div>
+				</div>
+				<button onclick="open_menu()" type="button" class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile hamburger is-closed animated fadeInLeft">
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
+				</button>
+		    </div>
+		  </div>
+		</section>
+		<!-- 手机导航 -->
+		<div class="overlay" onclick="close_menu()"></div>
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-box" id="sidebar-wrapper" role="navigation">
+			<ul class="nav sidebar-nav">
+				<li class="sidebar-brand">
+					<a href="#">
+					   菜单
+					</a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-fw fa-home"></i> 首页</a>
+				</li>
+				<li class="dropdown">
+				  <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 专区 <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="material.html">基础资源库</a></li>
+					<li><a href="material.html">基础资源库</a></li>
+					<li><a href="material.html">基础资源库</a></li>
+				  </ul>
+				</li>
+				<li>
+					<a href="sourceStatistics.html"><i class="fa fa-fw fa-bank"></i>资源统计</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- 关注内容-->
+		<section id="cbs_content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="offset-3 col-8 attention_tag">
+						<div class="attention_tag_one" data-toggle="modal" data-target="#exampleModalCenter">
+							<div><img src="images/myAttention/add.png" ></div>
+							<div>关注方案</div>
+						</div> 
+						<div class="attention_tag_two">
+							<div data-str="道德">道德</div>
+							<div class="edit"><img src="images/myAttention/edit.png" alt=""></div>
+							<div class="del"><img src="images/myAttention/del.png" alt=""></div>
+						</div>
+						<div class="attention_tag_two">
+							<div data-str="语文">语文</div>
+							<div class="edit"><img src="images/myAttention/edit.png" alt=""></div>
+							<div class="del"><img src="images/myAttention/del.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="offset-1 col-10 attention_content">
+						<div class="attention_left">
+							<ul class="attention_left_top">
+								<li><img src="images/index/myhead.jpg" alt=""></li>
+								<li>静静的ID</li>
+							</ul>
+							<ul class="attention_left_bottom">
+									<li >
+										<a href="mySource.html">
+											<div><img src="images/myAttention/left_nav_0.png" ></div>
+											<div>我的资源</div>
+										</a>
+									</li>
+									<li class="active_m">
+										<a href="myAttention.html">
+											<div><img src="images/myAttention/left_nav_1_active.png" ></div>
+											<div>我的关注</div>
+										</a>
+									</li>
+									<li>
+										<a href="myCollect.html">
+											<div><img src="images/myAttention/left_nav_2.png" ></div>
+											<div>我的收藏</div>
+										</a>
+									</li>
+									<li>
+										<a href="myRecord.html">
+											<div><img src="images/myAttention/left_nav_3.png" ></div>
+											<div>我的记录</div>
+										</a>
+									</li>
+									<li>
+										<a href="myDownload.html">
+											<div><img src="images/myAttention/left_nav_4.png" ></div>
+											<div>我的下载</div>
+										</a>
+									</li>
+								</ul>
+						</div>
+						<div class="attention_right">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--分页-->
+		<section id="cbs_page">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center justify-content-center pages_info">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalCenterTitle">添加关注方案</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+				  <input type="text" placeholder="新增关注方案名称" autocomplete="off">
+				</div>
+				<div class="modal-body">
+					<input type="text" placeholder="关键字" autocomplete="off" id="keyword">
+				</div>
+				<div class="modal-body">
+					<div class="btn_box">
+						<span onclick="addStr(this)">+</span>
+						<span onclick="addStr(this)">|</span>
+					</div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+				  <button type="button" class="btn btn-primary">保存</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="mask_layer mask_hidden">
+			<div class="pop_window">
+				<h2>是否删除?</h2>
+				<div class="pop_btn">
+					<div class="pop_cancle">取消</div>
+					<div class="pop_del">删除</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+<!-- 		<footer id="cbs_footer">
+		  <div class="container-fluid footer_content d-none d-md-block">
+		    <div class="row">
+		      <div class="footer_text d-flex align-items-center justify-content-center">
+		        www.copyright.com 京ICP备09080213号
+		      </div>
+		    </div>
+		  </div>
+		</footer> -->
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap3-typeahead.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/myAttention.js"></script>
+	</body>
+</html>

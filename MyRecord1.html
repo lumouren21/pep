@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <title>我的浏览记录</title>
+	  <link rel="stylesheet" href="css/bootstrap.css">
+	  <link rel="stylesheet" href="css/normalize.css">
+	  <link rel="stylesheet" href="css/common_function.css">
+	  <link rel="stylesheet" href="css/myAttention.css">
+	  <link rel="stylesheet" href="css/myRecord.css">
+	  <style>
+			@media (min-width: 1200px) {
+			  #searchBox{visibility:hidden;}
+			}
+		  </style>
+	</head>
+	<body>
+		<!--头部-->
+		<header id="cbs_header">
+		  <div class="container-fluid top_content">
+		    <div class="row">
+				<div class="col-5 offset-lg-1 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start">
+					<a href="material.html">
+						<img src="images/index/logo.png">
+						<div class="top_content_word">资源统一服务平台</div>
+					</a>	
+						</div>
+						<div class="col-lg-4 d-lg-block top_seach col-5">
+						
+						</div>
+						<div class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile">
+						<div class="top_profile_img">
+					  <img src="images/index/myimg.png" alt="">
+				  </div>
+		        <div class="dropdown show top_arrows">
+		          <img src="images/index/triangle.png" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+		            <div class="dropdown_content top_last_word">
+		              <img src="images/index/logout.png" alt="">
+		              <a class="dropdown-item" href="#">退出登录</a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</header>
+		<!--导航栏-->
+		<section id="cbs_nav">
+		  <div class="container-fluid bottom_content">
+		    <div class="row">
+		      <div class="offset-2 col-4 col-lg-4 offset-lg-3 nav_width nav_box">
+		        <ul class="d-flex text-center bottom_ul">
+					<li><a href="material.html">搜索</a></li>
+					<li><a href="myCollect1.html">我的收藏</a></li>
+					<li><a href="myDownload1.html">我的下载</a></li>
+					<li class="active">我的浏览</li>
+		        </ul>
+			  </div>
+			  <button onclick="open_menu()" type="button" class="hamburger is-closed animated fadeInLeft">
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
+				</button>
+		    </div>
+		  </div>
+		</section>
+		<div class="overlay" onclick="close_menu()"></div>
+
+	<!-- 手机导航 -->
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-box" id="sidebar-wrapper" role="navigation">
+		<ul class="nav sidebar-nav">
+			<li class="sidebar-brand">
+				<a href="#">
+				   菜单
+				</a>
+			</li>
+			<li>
+				<a href="material.html"><i class="fa fa-fw fa-home"></i> 搜索</a>
+			</li>
+			<li>
+				<a href="myCollect1.html"><i class="fa fa-fw fa-home"></i> 我的收藏</a>
+			</li>
+			<li>
+				<a href="myDownload1.html"><i class="fa fa-fw fa-home"></i> 我的下载</a>
+			</li>
+			<li>
+				<a href="MyRecord1.html"><i class="fa fa-fw fa-bank"></i>我的记录</a>
+			</li>
+		</ul>
+	</nav>
+		<!-- 浏览记录 -->
+		<section id="cbs_record" style="padding-top: 0px">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="offset-1 col-10 attention_content">
+						<div class="attention_left">
+							<div style="width: 178px;text-align: center">
+									素材库
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="offset-1 col-10 attention_content">
+						<div class="attention_left">
+							<ul class="attention_left_top">
+								<li><img src="images/index/myhead.jpg" alt=""></li>
+								<li>静静的ID</li>
+							</ul>
+							<ul class="attention_left_bottom">
+								<li data-type="1">
+									<a href="myCollect1.html">
+										<div><img src="images/myAttention/left_nav_2.png" ></div>
+										<div>我的收藏</div>
+									</a>
+								</li>
+								<li data-type="1">
+									<a href="myDownload1.html">
+										<div><img src="images/myAttention/left_nav_4.png" ></div>
+										<div>我的下载</div>
+									</a>
+								</li>
+								<li class="active_m" data-type="1">
+									<a href="MyRecord1.html">
+										<div><img src="images/myAttention/left_nav_3_active.png" ></div>
+										<div>我的记录</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="attention_right">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+		<!--分页-->
+		<section id="cbs_page">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center justify-content-center pages_info">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--尾部-->
+	<!-- 	<footer id="cbs_footer">
+		  <div class="container-fluid footer_content d-none d-md-block">
+		    <div class="row">
+		      <div class="footer_text d-flex align-items-center justify-content-center">
+		        www.copyright.com 京ICP备09080213号
+		      </div>
+		    </div>
+		  </div>
+		</footer> -->
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap3-typeahead.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/MyRecord1.js"></script>
+	</body>
+</html>

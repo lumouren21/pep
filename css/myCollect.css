@@ -1,0 +1,135 @@
+.fliter_word {
+	/* width: 40px; */
+	height: 25px;
+	background: #035056;
+	border-radius: 3px;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #FFFFFF;
+	padding: 0 15px;
+	position: relative;
+	cursor: pointer;
+}
+.collect_search_form {
+	width: 200px;
+	height: 240px;
+	position: absolute;
+	z-index:1000;
+	top: 50px;
+	left: -270%;
+	background-color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 32px;
+	padding: 20% 20px 20px 20px;
+	border: 1px solid rgba(3, 80, 86, 0.32156862745098036);
+	border-radius: 8px;
+}
+ .collect_search_form:before{
+	content: "";
+	width: 0px;
+	height: 0px;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 20px solid rgba(3, 80, 86, 0.32156862745098036);
+	position: absolute;
+	top: -20px;
+	left: 160px;
+}
+.collect_search_form:after{
+	 content: "";
+	 width: 0px;
+	 height: 0px;
+	 border-left: 11px solid transparent;
+	 border-right: 11px solid transparent;
+	 border-bottom: 19px solid #FFFFFF;
+	 position: absolute;
+	 top: -19px;
+	 left: 161px;
+ }
+.collect_search_form input {
+	 display: block;
+	 border: none;
+	 background-color: #F0F0F0;
+	 width: 160px;
+	 height: 30px;
+	 margin: 12px 0;
+	 color: #8E8E8E;
+	 padding-left: 10px;
+ }
+
+.collect_search_form input:focus {
+     outline: none;
+}
+.collect_search_form input:placeholder-shown {
+     padding-left: 10px;
+}
+.gj-datepicker-md [role=right-icon] {
+	position: absolute;
+	right: 0!important;
+	top: 5px!important;
+}
+.gj-textbox-md {
+	font-size: 10px!important;
+}
+.gj-textbox-md:focus {
+	border: none!important;
+}
+.fliter_button {
+	display: flex;
+	justify-content: space-between;
+}
+.fliter_button div:first-child {
+	width: 70px;
+	height: 28px;
+	background: #DBDBDB;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #333333;
+	text-align: center;
+}
+.fliter_button div:last-child {
+	width: 70px;
+	height: 28px;
+	background: #007E88;
+	opacity: 1;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.search_form_hidden {
+	display: none;
+}
+@media (max-width:760px) {
+	.fliter_word {width: 40px;text-align: center;padding: 0 2px;}
+}
+.main_function {
+	width: 72px;
+	height: 28px;
+	background: #FFFFFF;
+	border: 1px solid #035056;
+	font-size: 12px;
+	font-weight: 400;
+	color: #035056;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 30px;
+	cursor: pointer;
+	position: relative;
+	margin-top: 30px;
+}
+.rotate180{
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}

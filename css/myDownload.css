@@ -1,0 +1,225 @@
+.download_card  ul {
+	display: flex;
+	padding-left: 230px;
+}
+.download_card  ul  li {
+	/* width: 72px; */
+	height: 28px;
+	background: #FFFFFF;
+	border: 1px solid #035056;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #035056;
+	padding: 0 10px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.card_active {
+	background-color: #035056!important;
+	color: #fff!important;
+}
+.check_all {
+	display: flex;
+	padding-left: 0.6%;
+	align-items: center;
+	padding-left: 230px;
+}
+.check_all div:first-child{
+	width: 16px;
+	height: 16px;
+	background: #FFFFFF;
+	border: 1px solid #035056;
+	margin-right: 5px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 1px;
+}
+.check_all div:first-child img{
+	width: 100%;
+}
+.check_all div:last-child{
+	font-size: 12px;
+	font-weight: 400;
+	color: #035056;
+}
+.check_item {
+	display: flex;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+	background: #FFFFFF;
+	border: 1px solid #035056;
+	margin-right: 19px;
+	flex-shrink: 0;
+	padding: 1px;
+}
+.check_item img {
+	width:100%;
+}
+.fliter_word {
+	/* width: 40px; */
+	height: 27px;
+	background: #FFFFFF;
+	border: 1px solid #035056;
+	border-radius: 3px;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 25px;
+	color: #035056;
+	padding: 1px 15px;
+	position: relative;
+	cursor: pointer;
+	margin-top: 0px;
+}
+.collect_search_form {
+	width: 200px;
+	height: 295px;
+	position: absolute;
+	z-index:1000;
+	top: 50px;
+	left: -155%;
+	background-color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 32px;
+	padding: 20% 20px 20px 20px;
+	border: 1px solid rgba(3, 80, 86, 0.32156862745098036);
+	border-radius: 8px;
+}
+ .collect_search_form:before{
+	content: "";
+	width: 0px;
+	height: 0px;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 20px solid rgba(3, 80, 86, 0.32156862745098036);
+	position: absolute;
+	top: -20px;
+	left: 160px;
+}
+.collect_search_form:after{
+	 content: "";
+	 width: 0px;
+	 height: 0px;
+	 border-left: 11px solid transparent;
+	 border-right: 11px solid transparent;
+	 border-bottom: 19px solid #FFFFFF;
+	 position: absolute;
+	 top: -19px;
+	 left: 161px;
+ }
+.collect_search_form input {
+	 display: block;
+	 border: none;
+	 background-color: #F0F0F0;
+	 width: 160px;
+	 height: 30px;
+	 margin: 12px 0;
+	 color: #8E8E8E;
+	 padding-left: 10px;
+ }
+ .collect_search_form select {
+    display: block;
+    border: none;
+    background-color: #F0F0F0;
+    width: 160px;
+    height: 30px;
+    margin: 12px 0;
+    color: #8E8E8E;
+    padding-left: 10px;
+}
+.collect_search_form input:focus {
+     outline: none;
+}
+.collect_search_form input:placeholder-shown {
+     padding-left: 10px;
+}
+.gj-datepicker-md [role=right-icon] {
+	position: absolute;
+	right: 0!important;
+	top: 5px!important;
+}
+.gj-textbox-md {
+	font-size: 10px!important;
+}
+.gj-textbox-md:focus {
+	border: none!important;
+}
+.fliter_button {
+	display: flex;
+	justify-content: space-between;
+}
+.fliter_button div:first-child {
+	width: 70px;
+	height: 28px;
+	background: #DBDBDB;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #333333;
+	text-align: center;
+}
+.fliter_button div:last-child {
+	width: 70px;
+	height: 28px;
+	background: #007E88;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.search_form_hidden {
+	display: none;
+}
+.download_card ul :first-child{
+	margin-left: 0px
+}
+@media (max-width: 1200px) {
+	.download_card ul{
+		padding-left: 0px;
+	}
+	.download_card ul li {
+		width: 99px;
+		height: 28px;
+		background: #FFFFFF;
+		border: 1px solid #035056;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 28px;
+		color: #035056;
+		padding: 0 0px;
+		margin-left: 14px;
+		cursor: pointer;
+		text-align: center;
+	}
+	/*.check_all {padding-left: 20px}*/
+}
+@media (max-width:760px) {
+	.check_all {padding-left: 20px}
+}
+@media (min-width:760px) and (max-width:1200px){
+	.download_card ul{
+		padding-left: 230px;
+	}
+}
+.fliter_word0{
+    background: #dc6666;
+    color: #fff;
+	height: 27px;
+	border: 1px solid #dc6666;
+	border-radius: 3px;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 25px;
+	padding: 1px 15px;
+	position: relative;
+	cursor: pointer;
+	margin-top: 0px;
+	margin-right: 20px;
+}
