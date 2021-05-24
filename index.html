@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/common_function.css"/>
     <link rel="stylesheet" href="css/owl.carousel.min.css"/>
     <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/pep.css"/>
     <script>
         var userId = "QINY0037";
     </script>
@@ -19,9 +20,7 @@
     <script src="js/bootstrap3-typeahead.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/index.js"></script>
-    <!--
     <script src="js/index_b.js"></script>
-    -->
 </head>
 <body>
 <!--头部-->
@@ -149,268 +148,219 @@
 <section id="cbs_img">
     <img src="images/index/swiper.png" class="img-fluid">
 </section>
-<!--最新更新-->
-<section id="cbs_update">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="offset-1 col-10 last_update_text">
-                <div class="main_text">最新更新</div>
-                <div class="learn_more"><a href="search.html">查看更多 ></a></div>
-            </div>
-            <div class="offset-1 col-10 last_update_img">
-            <div class="last_update_img_info">
-                <div class="update_book"><img
-                        src="http://testdam.pep.com.cn:8088/adaptivemedia/rendition?id=caf0a945f42959d43590efee2362c3818da48c16"
-                        alt="">
-                    <div class="mask"></div>
-                    <div class="imgaes">
-                        <div><img src="/resources/img/index/guanzhu.png" alt="" id="10200017220346"></div>
-                        <div class="space"><a href="/pep/catologDetail.page?topicId=10200017220346"><img
-                                src="/resources/img/index/shoucang.png" alt=""></a></div>
-                    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <!--最新更新-->
+            <section id="cbs_update" class="card pep-card ">
+                <div class="card-header">
+                    最新更新
+                    <a href="search.html" class="learn_more float-right">查看更多 ></a>
                 </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        $('.last_update_img_info').owlCarousel({
-            loop: true,
-            margin: 30,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 2,
-                    nav: false,
-                    loop: true
-                },
-                768: {
-                    items: 4,
-                    nav: false,
-                    loop: true
-                },
-                1200: {
-                    items: 8,
-                    nav: false,
-                    loop: true
-                }
-            }
-        })
-    </script>
-</section>
-<!--
-<section id="cbs_update">
-
-            <div class="last_update_text">
-                <div class="main_text">最新更新</div>
-                <div class="learn_more"><a href="search.html">查看更多 ></a></div>
-            </div>
-            <div class="last_update_img">
-                <div class="arrow_img arrow_left"><img src="images/index/arrows_left.png" alt=""></div>
-                <div class="last_update_img_info">
-                </div>
-                <div class="arrow_img arrow_right"><img src="images/index/arrows_right.png" alt=""></div>
-            </div>
-    <script>
-        // 最新更新
-        var url = "http://192.168.190.122:1876/dam-api/book/latestUpdates"
-        var collectListUrl = "http://192.168.190.122:1876/dam-api/book/isOrNotCollect"
-        let collectValue
-        let topicIDS = []
-
-
-        function showBook(swiper, swiper_index, swiper_show) {
-            for (let i of swiper.slice(swiper_index, swiper_show)) {
-                var topicID = i.select_topic_id
-                topicIDS.push(topicID)
-            }
-            var map = collection(topicIDS)
-
-            for (let i of swiper.slice(swiper_index, swiper_show)) {
-                var topicID = i.select_topic_id
-                for (var key in map) {
-                    if (key == topicID) {
-                        collectValue = map[key]
-                        if (collectValue == 1) {
-                            $('.last_update_img_info').append('<div class="update_book"><img src="' + i.cover_path + '" alt=""><div class="mask"></div><div class="imgaes"><div><img src="/resources/img/index/guanzhu_b.png" alt="  id="' + topicID + '" ></div><div class="space"><a href="/pep/catologDetail.page?topicId=' + i.select_topic_id + '"><img src="/resources/img/index/shoucang.png" alt=""></a></div></div></div>')
-                        } else {
-                            $('.last_update_img_info').append('<div class="update_book"><img src="' + i.cover_path + '" alt=""><div class="mask"></div><div class="imgaes"><div><img src="/resources/img/index/guanzhu.png" alt=""  id="' + topicID + '" ></div><div class="space"><a href="/pep/catologDetail.page?topicId=' + i.select_topic_id + '"><img src="/resources/img/index/shoucang.png" alt=""></a></div></div></div>')
-                        }
-                        break;
-                    }
-                }
-            }
-        }
-
-        function lastupdate() {
-            // 第一张图片索引
-            let swiper_index = 0
-            // 显示图片个数
-            let swiper_show = 8
-
-            $.get(url + "?pageNum=0&pageSize=20", function (data) {
-                //当前所有的图书
-                let swiper = data.data;
-                //
-
-                // 最新更新
-                if (W_width < 760) {
-                    swiper_show = 2
-                    showBook(swiper, swiper_index, swiper_show)
-                } else {
-                    showBook(swiper, swiper_index, swiper_show)
-                }
-                $('.last_update_img').children('div:first-child').addClass('arrow_hidden')
-                if (swiper.length <= swiper_show) {
-                    $('.last_update_img').children('div:last-child').addClass('arrow_hidden')
-                }
-
-
-                // 最新更新右箭头
-                $('.arrow_right').click(function () {
-                    swiper_index += 1
-                    $('.last_update_img_info').empty()
-                    showBook(swiper, swiper_index, swiper_show + swiper_index)
-                    // swiper.length 数据总条数
-                    // swiper_show 显示图片个数
-                    // swiper_index  第一张图片索引
-                    // 控制右侧箭头隐藏
-                    $('.last_update_img').children('div:first-child').removeClass('arrow_hidden').addClass('arrow_show')
-                    if (swiper.length - swiper_show == swiper_index) {
-                        $('.last_update_img').children('div:last-child').addClass('arrow_hidden')
-                    }
-                })
-                // 最新更新左箭头
-                $('.arrow_left').click(function () {
-                    swiper_index -= 1
-                    $('.last_update_img_info').empty()
-                    showBook(swiper, swiper_index, swiper_show + swiper_index)
-
-                    // swiper.length 数据总条数
-                    // swiper_show 显示图片个数
-                    // swiper_index  第一张图片索引
-                    // 控制右侧箭头隐藏
-                    $('.last_update_img').children('div:last-child').removeClass('arrow_hidden').addClass('arrow_show')
-                    if (swiper_index == 0) {
-                        $('.last_update_img').children('div:first-child').addClass('arrow_hidden')
-                    }
-                })
-            });
-        }
-
-        function collection(topicIDS) {
-            var result;
-            $.ajax({
-                url: collectListUrl, // 目标资源
-                cache: false, //true 如果当前请求有缓存的话，直接使用缓存。如果该属性设置为 false，则每次都会向服务器请求
-                async: false, //默认是true，即为异步方式-
-                type: "post", // 请求方式
-                contentType: "application/json;charset=utf-8",
-                data: JSON.stringify(
-                    {
-                        "topicIds": topicIDS,
-                        "userId": userId
-                    }),
-                success: function (data) {
-                    result = data.data
-
-                }
-
-            })
-            return result;
-        }
-
-
-        $(document).ready(function () {
-            W_width = window.screen.width
-            lastupdate();
-        })
-    </script>
-</section>
--->
-
-<!--个性推荐-->
-<section id="cbs_recommend">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="offset-1 col-10 recommend_main">
-                <div class="recommend_main_left">
-                    <div class="main_left_top">
-                        <div class="main_text">个性推荐</div>
-                        <!-- <div class="word_eight">查看更多 ></div> -->
-                    </div>
-                    <div class="recommend_content_one">
-                        <div class="specific_content_img">
-                            <img src="" alt="">
+                <div class="card-body ">
+                    <div class="last_update_img_info owl-carousel">
+                        <div class="update_book"><img
+                                src="http://testdam.pep.com.cn:8088/adaptivemedia/rendition?id=caf0a945f42959d43590efee2362c3818da48c16"
+                                alt="">
                             <div class="mask"></div>
                             <div class="imgaes">
-                                <div><img src="images/index/guanzhu.png" alt=""></div>
-                                <div class="space">
-                                    <a href="catalogInfo.html">
-                                        <img src="images/index/shoucang.png" alt="">
-                                    </a>
+                                <div class="space"><a
+                                        href="$PAGE_LINK{catologDetail.page}?topicId=10200017220346"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="specific_content">
-                            <div class="specific_img">
-                                <img src="images/index/new.png" alt="">
-                                <div class="specific_text">最&nbsp;新</div>
+                    </div>
+                </div>
+                <script>
+                    $('.last_update_img_info').owlCarousel({
+                        loop: true,
+                        margin: 30,
+                        responsiveClass: true,
+                        responsive: {
+                            0: {
+                                items: 2,
+                                nav: false,
+                                loop: true
+                            },
+                            768: {
+                                items: 4,
+                                nav: false,
+                                loop: true
+                            },
+                            1200: {
+                                items: 8,
+                                nav: false,
+                                loop: true
+                            }
+                        }
+                    })
+                </script>
+            </section>
+        </div>
+        <div class="col-12">
+            <!--个性推荐-->
+            <section id="cbs_recommend" class="card pep-card">
+                <div class="card-header">
+                    <span>个性推荐</span>
+                    <div class="learn_more change_batch float-right">
+                        <div><img src="images/index/exchange.png" alt=""></div>
+                        <div>&nbsp;换一批</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="recommend_content_one">
+                                <div class="specific_content_img">
+                                    <img src="images/index/update_book.png" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                <div class="specific_content d-none d-md-block">
+                                    <div class="specific_img">
+                                        <img src="images/index/new.png" alt="">
+                                        <div class="specific_text">最新</div>
+                                    </div>
+                                    <div class="word_one">人教金典同步练习</div>
+                                    <div class="-none d-md-block word_two">作者：韩涵</div>
+                                    <div class="word_three d-none d-md-block"></div>
+                                    <div class="word_four">新版通城学典小学数学计算机能手一年级上册，数学人教版北师版同步训练练习册精选题汇总，教材已进入义务教育教科书。</div>
+                                </div>
                             </div>
-                            <div class="word_one"></div>
-                            <div class="word_two is_phone"></div>
-                            <div class="word_three is_phone"></div>
-                            <div class="word_four is_phone"></div>
+                            <div class="d-md-none">
+                                <div class="word_one">人教金典同步练习</div>
+                                <div class="word_two">作者：韩涵</div>
+                                <div class="word_three"></div>
+                                <div class="word_four">新版通城学典小学数学计算机能手一年级上册，数学人教版北师版同步训练练习册精选题汇总，教材已进入义务教育教科书。</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="recommend_content_one_m">
-                        <div>
-                            <div class="word_two"></div>
-                            <div class="word_three"></div>
-                            <div class="word_four"></div>
+                        <div class="col-md-7 d-flex">
+                            <div class="row align-content-center">
+                                <div class="col-6 col-md-3">
+                                    <div class="replace_content_img"><img src="images/index/update_big_img.png"
+                                                                          alt="">
+                                        <div class="mask"></div>
+                                        <div class="imgaes">
+                                            <div><img src="images/index/guanzhu.png" alt=""></div>
+                                            <div class="space"><a href="catalogInfo.html"><img
+                                                    src="images/index/shoucang.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center flex-column">
+                                        <div class="word_five">人教金典同步练习</div>
+                                        <div class="word_six">作者：韩涵</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="replace_content_img"><img src="images/index/update_big_img.png"
+                                                                          alt="">
+                                        <div class="mask"></div>
+                                        <div class="imgaes">
+                                            <div><img src="images/index/guanzhu.png" alt=""></div>
+                                            <div class="space"><a href="catalogInfo.html"><img
+                                                    src="images/index/shoucang.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center flex-column">
+                                        <div class="word_five">人教金典同步练习</div>
+                                        <div class="word_six">作者：韩涵</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="replace_content_img"><img src="images/index/update_big_img.png"
+                                                                          alt="">
+                                        <div class="mask"></div>
+                                        <div class="imgaes">
+                                            <div><img src="images/index/guanzhu.png" alt=""></div>
+                                            <div class="space"><a href="catalogInfo.html"><img
+                                                    src="images/index/shoucang.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center flex-column">
+                                        <div class="word_five">人教金典同步练习</div>
+                                        <div class="word_six">作者：韩涵</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="replace_content_img"><img src="images/index/update_big_img.png"
+                                                                          alt="">
+                                        <div class="mask"></div>
+                                        <div class="imgaes">
+                                            <div><img src="images/index/guanzhu.png" alt=""></div>
+                                            <div class="space"><a href="catalogInfo.html"><img
+                                                    src="images/index/shoucang.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center flex-column">
+                                        <div class="word_five">人教金典同步练习</div>
+                                        <div class="word_six">作者：韩涵</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="recommend_main_right">
-                    <div class="learn_main">
-                        <div class="learn_more change_batch">
-                            <div><img src="images/index/exchange.png" alt=""></div>
-                            <div>&nbsp;换一批</div>
-                        </div>
-                    </div>
-                    <div class="recommend_content_two">
-                    </div>
+            </section>
+        </div>
+        <!--社会关注&热门搜寻-->
+        <div class="col-md-6">
+            <section id="social_attention" class="card pep-card">
+                <div class="card-header">
+                    社会关注
                 </div>
-            </div>
+                <div class="card-body">
+                    <div class="society_content_info"><a href="search.page?keyWord=数学">
+                        <div class="society_text">数学</div>
+                        <div class="society_plan">
+                            <div class="society_plan_info" style="width:17.2%"></div>
+                        </div>
+                        <div class="society_num">258</div>
+                    </a></div>
+                    <div class="society_content_info"><a href="search.page?keyWord=年级">
+                        <div class="society_text">年级</div>
+                        <div class="society_plan">
+                            <div class="society_plan_info" style="width:46.666666666666664%"></div>
+                        </div>
+                        <div class="society_num">700</div>
+                    </a></div>
+                    <div class="society_content_info"><a href="search.page?keyWord=历史">
+                        <div class="society_text">历史</div>
+                        <div class="society_plan">
+                            <div class="society_plan_info" style="width:50.4%"></div>
+                        </div>
+                        <div class="society_num">756</div>
+                    </a></div>
+                    <div class="society_content_info"><a href="search.page?keyWord=语文">
+                        <div class="society_text">语文</div>
+                        <div class="society_plan">
+                            <div class="society_plan_info" style="width:1.2%"></div>
+                        </div>
+                        <div class="society_num">18</div>
+                    </a></div>
+                    <div class="society_content_info"><a href="search.page?keyWord=道德与法治">
+                        <div class="society_text">道德与法治</div>
+                        <div class="society_plan">
+                            <div class="society_plan_info" style="width:100%"></div>
+                        </div>
+                        <div class="society_num">1500</div>
+                    </a></div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <section id="hot_search" class="card pep-card">
+                <div class="card-header">
+                    热门图书
+                </div>
+                <div class="card-body">
+                    <a href="catologDetail.page?topicId=10200018370074" class="d-block">
+                        <span class="search_number" style="background-color:#FF5050">01</span>
+                        <span class="search_text">义务教育教科书 道德与法治 一年级下册</span>
+                    </a>
+                </div>
+            </section>
         </div>
     </div>
-</section>
-
-<!--社会关注&热门搜寻-->
-<section id="cbs_society">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="offset-1 col-10 society_main">
-                <div class="society_left">
-                    <div class="society_one">
-                        <div class="word_seven">社会关注</div>
-                        <!-- <div class="word_eight">查看更多 ></div> -->
-                    </div>
-                    <div class="society_content">
-                    </div>
-                </div>
-                <div class="society_right">
-                    <div class="society_two">
-                        <div class="word_nine">热门图书</div>
-                        <!-- <div class="word_ten">查看更多 ></div> -->
-                    </div>
-                    <div class="search_content">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 <!--尾部-->
 <footer id="cbs_footer">
     <div class="container-fluid footer_content d-none d-md-block">

@@ -1,0 +1,10 @@
+.pep-card{
+    margin: 20px 0;
+    border: 0px;
+    background: white;
+}
+.pep-card .card-header{
+    border-bottom: 0;
+    font-weight: bold;
+    font-size: 24px;
+}

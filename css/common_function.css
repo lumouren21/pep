@@ -472,6 +472,7 @@ body {
   .hamburger{display: none!important;}
   .top_seach0{display:none}
   .typeahead{min-width: 270px;}
+  .container{max-width: 1800px;}
 }
 @media (max-width: 992px) {
   .hamburger{right: 30px}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6b97a07-be9f-481c-a965-36facb788a8f" name="Default Changelist" comment="更新最近更新组件">
+      <change afterPath="$PROJECT_DIR$/css/pep.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common_function.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common_function.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index_b.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1shMtdn1VLgRP06fAbDYm2FSjRU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6b97a07-be9f-481c-a965-36facb788a8f" name="Default Changelist" comment="" />
+      <created>1621320583363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621320583363</updated>
+      <workItem from="1621320584934" duration="371000" />
+      <workItem from="1621494675816" duration="19071000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1621320705019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621320705019</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更新最近更新组件">
+      <created>1621833842770</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621833842770</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="更新最近更新组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新最近更新组件" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1532" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621590085961">
+      <screen x="-2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-1532" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1621590085961" />
+    <state x="-2468" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1621859840657">
+      <screen x="-2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2468" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1621859840657" />
+    <state x="872" y="481" key="Vcs.Push.Dialog.v2" timestamp="1621833844347">
+      <screen x="0" y="0" width="2560" height="1560" />
+    </state>
+    <state x="-1688" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1621320707370" />
+    <state x="872" y="481" key="Vcs.Push.Dialog.v2/0.0.2560.1560/-2560.0.2560.1400@0.0.2560.1560" timestamp="1621833844347" />
+    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1621834797873">
+      <screen x="0" y="0" width="2560" height="1560" />
+    </state>
+    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.0.2560.1560/-2560.0.2560.1400@0.0.2560.1560" timestamp="1621834797873" />
+  </component>
+</project>
