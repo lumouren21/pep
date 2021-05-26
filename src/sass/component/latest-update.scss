@@ -1,0 +1,40 @@
+
+.learn_more {
+  width: 92px;
+  height: 32px;
+  background: rgba(3, 80, 86, 0.12);
+  opacity: 1;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #035056;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.learn_more a {
+  color: #035056;
+}
+
+@media (min-width: 1200px) {
+  .last_update_img_info {
+    /*width: 92%;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .last_update_img_info {
+    /*width: 92%;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}

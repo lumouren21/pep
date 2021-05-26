@@ -1,0 +1,112 @@
+
+#cbs_society {
+  padding-top: 40px;
+  background-color: #F8F8F8;
+  padding-bottom: 58px;
+}
+.society_content {
+  padding: 36px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.society_content > div + div {
+  margin-top: 28px;
+}
+
+.society_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+  opacity: 1;
+  margin-right: 16px;
+  width: 50px;
+}
+
+.society_number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+  opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .society_main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .society_left {
+    width: 49%;
+  }
+
+  .society_right {
+    width: 49%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .society_main {
+    width: 100%;
+  }
+
+  /* 	.society_left {
+          width: 49%;
+      } */
+  .society_right {
+    margin-top: 20px;
+  }
+}
+
+.society_one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.society_two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.society_content {
+  padding: 36px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.society_content_info {
+  display: flex;
+  align-items: center;
+}
+
+.society_content_info a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.society_num {
+  color: #212529
+}
+
+.society_content_info div {
+  cursor: pointer;
+}
+
+.society_plan {
+  width: 70%;
+  height: 14px;
+  border-radius: 14px;
+  background-color: #E2E2E2;
+  margin-right: 32px;
+}
+
+.society_plan_info {
+  /* width: 80%; */
+  height: 14px;
+  border-radius: 14px;
+  background-color: #336865;
+}

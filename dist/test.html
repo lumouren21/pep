@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>首页</title>
+  <link rel="stylesheet" href="../src/sass/plugins/bootstrap.css">
+  <link rel="stylesheet" href="../src/sass/plugins/normalize.css">
+  <link rel="stylesheet" href="css/common_function.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+ <section>
+    <div class="container-fluid bottom_content">
+      <div class="row">
+        <div class="offset-2 col-4 col-lg-4 offset-lg-3 nav_box">
+          <ul class="d-flex text-center bottom_ul">
+            <li class="active">首页</li>
+            <li class="position-relative">
+              专区
+              <ul class="nav_ul show_drop"> 
+                <li>基础资源库</li>
+                <li>基础资源库</li>
+                <li>基础资源库</li>
+              </ul>
+            </li>
+            <li><a href="sourceStatistics.html">资源统计</a></li>
+		  </ul>
+		</div>
+		<div class="offset-lg-1 col-lg-8 d-lg-block top_seach0 col-5">
+			<div class="top_input d-flex justify-content-end">
+				<input type="text" placeholder="请输入关键字">
+				<div class="top_search d-flex align-items-center">
+				<img src="images/index/search.png" alt="">
+				</div>
+			</div>
+		</div>
+		<button onclick="open_menu()" type="button" class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile hamburger is-closed animated fadeInLeft">
+			<span class="hamb-top"></span>
+			<span class="hamb-middle"></span>
+			<span class="hamb-bottom"></span>
+		</button>
+		
+	  </div>
+    </div>
+  </section>
+  <div class="overlay" onclick="close_menu()"></div>
+
+	<!-- 手机导航 -->
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-box" id="sidebar-wrapper" role="navigation">
+		<ul class="nav sidebar-nav">
+			<li class="sidebar-brand">
+				<a href="#">
+				   菜单
+				</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-home"></i> 首页</a>
+			</li>
+			<li class="dropdown">
+			  <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 专区 <span class="caret"></span></a>
+			  <ul class="dropdown-menu" role="menu">
+				<li><a href="#">基础资源库</a></li>
+				<li><a href="#">基础资源库</a></li>
+				<li><a href="#">基础资源库</a></li>
+			  </ul>
+			</li>
+			<li>
+				<a href="sourceStatistics.html"><i class="fa fa-fw fa-bank"></i>资源统计</a>
+			</li>
+		</ul>
+	</nav>
+	<script src="../src/js/plugins/jquery-3.1.1.min.js"></script>
+  <script src="../src/js/plugins/popper.min.js"></script>
+  <script src="../src/js/plugins/bootstrap.min.js"></script>
+  <script src="src/jsx.js"></script>
+</body>
+</html>
