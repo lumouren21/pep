@@ -9561,6 +9561,15 @@ body {
   text-align: center;
   margin-right: 13px; }
 
+.search_number.one {
+  color: #FF5050; }
+
+.search_number.two {
+  color: #FD8164; }
+
+.search_number.three {
+  color: #FABF00; }
+
 .search_text {
   font-size: 16px;
   font-weight: 400;
