@@ -183,3 +183,10 @@
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  .specific_content_img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+  }
+}

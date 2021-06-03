@@ -1,163 +1,203 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  <title>素材</title>
-	  <link rel="stylesheet" href="../src/sass/plugins/bootstrap.css">
-	  <link rel="stylesheet" href="../src/sass/plugins/normalize.css">
-	  <link rel="stylesheet" href="css/common_function.css">
-	  <link rel="stylesheet" href="css/index.css">
-	  <link rel="stylesheet" href="../css/material.css">
-	</head>
-	<body>
-		<!--头部-->
-		<header id="cbs_header">
-				<div class="container-fluid top_content">
-				  <div class="row">
-					  <div class="col-5 offset-lg-1 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start">
-						<a href="index.html">  
-							<img src="images/index/logo.png">
-							<div class="top_content_word">资源统一服务平台</div>
-						</a>
-					  </div>
-					  <div class="col-lg-4 d-lg-block top_seach col-5">
-						  
-					  </div>
-					  <div class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile">
-						  <div class="top_profile_img">
-						  <img src="images/index/myimg.png" alt="">
-						</div>
-					  <div class="dropdown show top_arrows">
-						<img src="images/index/triangle.png" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-						  <div class="dropdown_content top_last_word">
-							<img src="images/index/logout.png" alt="">
-							<a class="dropdown-item" href="#">退出登录</a>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			  </header>
-		<!--导航栏-->
-		<section id="cbs_nav">
-		  <div class="container-fluid bottom_content">
-		    <div class="row">
-		      <div class="offset-2 col-4 col-lg-4 offset-lg-3 nav_width nav_box">
-		        <ul class="d-flex text-center bottom_ul">
-		          <li class="active">搜索</li>
-				  <li><a href="myCollect1.html">我的收藏</a></li>
-				  <li><a href="myDownload1.html">我的下载</a></li>
-				  <li><a href="MyRecord1.html">我的浏览</a></li>
-		        </ul>
-			  </div>
-			  <button onclick="open_menu()" type="button" class="hamburger is-closed animated fadeInLeft">
-					<span class="hamb-top"></span>
-					<span class="hamb-middle"></span>
-					<span class="hamb-bottom"></span>
-				</button>
-		    </div>
-		  </div>
-		</section>
-		<div class="overlay" onclick="close_menu()"></div>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>素材</title>
+    <link href="../src/sass/plugins/bootstrap.css" rel="stylesheet">
+    <link href="../src/sass/plugins/normalize.css" rel="stylesheet">
+    <link href="css/common_function.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="../css/material.css" rel="stylesheet">
+</head>
+<body>
+<!--头部-->
+<header id="cbs_header">
+    <div class="container-fluid top_content">
+        <div class="row">
+            <div class="col-5 offset-lg-1 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html">
+                    <img src="images/index/logo.png">
+                    <div class="top_content_word">资源统一服务平台</div>
+                </a>
+            </div>
+            <div class="col-lg-4 d-lg-block top_seach col-5">
 
-	<!-- 手机导航 -->
-	<nav class="navbar navbar-inverse navbar-fixed-top navbar-box" id="sidebar-wrapper" role="navigation">
-		<ul class="nav sidebar-nav">
-			<li class="sidebar-brand">
-				<a href="#">
-				   菜单
-				</a>
-			</li>
-			<li>
-				<a href="material.html"><i class="fa fa-fw fa-home"></i> 搜索</a>
-			</li>
-			<li>
-				<a href="myCollect1.html"><i class="fa fa-fw fa-home"></i> 我的收藏</a>
-			</li>
-			<li>
-				<a href="myDownload1.html"><i class="fa fa-fw fa-home"></i> 我的下载</a>
-			</li>
-			<li>
-				<a href="MyRecord1.html"><i class="fa fa-fw fa-bank"></i>我的记录</a>
-			</li>
-		</ul>
-	</nav>
-		<section id="cbs_material">
-			<div class="container-fluid">
-			   <div class="row">
-				   <div class="offset-1 col-10">
-					   <div class="top_input d-flex justify-content-center" style="justify-content: center!important;">
-					     <input type="text" placeholder="请输入关键字" data-provide="typeahead" autocomplete="off" id="searchWords">
-					     <div class="top_search d-flex align-items-center">
-					       <img src="images/index/search.png" alt="">
-					     </div>
-					   </div>
-					   <h3 class="top_input_h3">素材库</h3>
-					   <div class="guess_you_like">
-						   <h5 class="guess_you_like_h5">猜你喜欢</h5>
-						   <text>根据您的相关搜索、下载等记录,为您只能推荐最新的精彩影像。</text>
-					   </div>
-					   <div class="in_search">
-						   <h5>大家都在搜  :</h5>
-						   <ul>
-							   <li class="hotText">小学语文</li>
-							   <li class="hotText">数学</li>
-							   <li class="hotText">英语</li>
-						   </ul>
-					   </div>
-				   </div>
-			   </div>
-			</div>
-		</section>
-		<section  id="cbs_imgs">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="info_img_show_detail offset-1 col-10 last_update_img">
-						<div class="container0">
-								
-						</div>
-					</div>
-						<!--<div class="offset-1 col-10 last_update_img">
-							<div class="card-columns">
-								
-							</div>
-						</div>-->
-				</div>
-			</div>
-		</section>
-		<section id="cbs_page">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 d-flex align-items-center justify-content-center pages_info">
-				<!-- 		<div class="total_page">共4页/32条</div>
-						<div class="page_num native">1</div>
-						<div class="page_num">2</div>
-						<div class="page_num">3</div>
-						<div class="page_num">4</div>
-						<div class="page_next">下一页 ></div> -->
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--尾部-->
-		<footer id="cbs_footer">
-		  <div class="container-fluid footer_content d-none d-md-block">
-			<div class="row">
-			  <div class="footer_text d-flex align-items-center justify-content-center">
-				www.copyright.com 京ICP备09080213号
-			  </div>
-			</div>
-		  </div>
-		</footer>
-		<script src="../src/js/plugins/jquery-3.1.1.min.js"></script>
-		<script src="../src/js/plugins/jquery.row-grid.js"></script>
-		<script src="../src/js/plugins/popper.min.js"></script>
-		<script src="../src/js/plugins/bootstrap.min.js"></script>
-		<script src="../src/js/plugins/bootstrap3-typeahead.js"></script>
-		<script src="src/jsx.js"></script>
-		<script src="../src/js/material.js"></script>
-	</body>
+            </div>
+            <div class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile">
+                <div class="top_profile_img">
+                    <img alt="" src="images/index/myimg.png">
+                </div>
+                <div class="dropdown show top_arrows">
+                    <img aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                         data-toggle="dropdown" id="dropdownMenuLink" src="images/index/triangle.png">
+                    <div aria-labelledby="dropdownMenuLink" class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown_content top_last_word">
+                            <img alt="" src="images/index/logout.png">
+                            <a class="dropdown-item" href="#">退出登录</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--导航栏-->
+<section id="cbs_nav">
+    <div class="container-fluid bottom_content">
+        <div class="row">
+            <div class="offset-2 col-4 col-lg-4 offset-lg-3 nav_width nav_box">
+                <ul class="d-flex text-center bottom_ul">
+                    <li class="active">搜索</li>
+                    <li><a href="myCollect1.html">我的收藏</a></li>
+                    <li><a href="myDownload1.html">我的下载</a></li>
+                    <li><a href="MyRecord1.html">我的浏览</a></li>
+                </ul>
+            </div>
+            <button class="hamburger is-closed animated fadeInLeft" onclick="open_menu()" type="button">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+        </div>
+    </div>
+</section>
+<div class="overlay" onclick="close_menu()"></div>
+
+<!-- 手机导航 -->
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-box" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+            <a href="#">
+                菜单
+            </a>
+        </li>
+        <li>
+            <a href="material.html"><i class="fa fa-fw fa-home"></i> 搜索</a>
+        </li>
+        <li>
+            <a href="myCollect1.html"><i class="fa fa-fw fa-home"></i> 我的收藏</a>
+        </li>
+        <li>
+            <a href="myDownload1.html"><i class="fa fa-fw fa-home"></i> 我的下载</a>
+        </li>
+        <li>
+            <a href="MyRecord1.html"><i class="fa fa-fw fa-bank"></i>我的记录</a>
+        </li>
+    </ul>
+</nav>
+<section id="cbs_material">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-1 col-10">
+                <div class="top_input d-flex justify-content-center" style="justify-content: center!important;">
+                    <input autocomplete="off" data-provide="typeahead" id="searchWords" placeholder="请输入关键字"
+                           type="text">
+                    <div class="top_search d-flex align-items-center">
+                        <img alt="" src="images/index/search.png">
+                    </div>
+                </div>
+                <h3 class="top_input_h3">素材库</h3>
+                <div class="guess_you_like">
+                    <h5 class="guess_you_like_h5">猜你喜欢</h5>
+                    <text>根据您的相关搜索、下载等记录,为您只能推荐最新的精彩影像。</text>
+                </div>
+                <div class="in_search">
+                    <h5>大家都在搜 :</h5>
+                    <ul>
+                        <li class="hotText">小学语文</li>
+                        <li class="hotText">数学</li>
+                        <li class="hotText">英语</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="cbs_imgs">
+    <div class="container-fluid">
+    <div class="masonry row">
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG211114687810"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG211114687810.jpg"
+        ></a></div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=3d86b519f474868c45a240dd075e4bbcf8c2dc30"><img
+                src="http://testdam.pep.com.cn:8088/adaptivemedia/rendition?id=3d86b519f474868c45a240dd075e4bbcf8c2dc30"></a>
+        </div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG41N1128046802"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG41N1128046802.jpg"
+        ></a></div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG211126961291"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG211126961291.jpg"
+        ></a></div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG211152107286"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG211152107286.jpg"
+        ></a></div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG211233299320"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG211233299320.jpg"
+        ></a></div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG211114687810"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG211114687810.jpg"
+        ></a></div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=3d86b519f474868c45a240dd075e4bbcf8c2dc30"><img
+                src="http://testdam.pep.com.cn:8088/adaptivemedia/rendition?id=3d86b519f474868c45a240dd075e4bbcf8c2dc30"></a>
+        </div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG41N1128046802"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG41N1128046802.jpg"
+        ></a></div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG211126961291"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG211126961291.jpg"
+        ></a></div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG211152107286"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG211152107286.jpg"
+        ></a></div>
+        <div class="col-md-3 col-sm-6 item"><a href="/pep/vcgDetail.page?id=VCG211233299320"><img
+                src="http://photo-static-api.fotomore.com/creative/vcg/400/new/VCG211233299320.jpg"
+        ></a></div>
+    </div>
+    </div>
+</section>
+<section id="cbs_page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center pages_info">
+                <!-- 		<div class="total_page">共4页/32条</div>
+                        <div class="page_num native">1</div>
+                        <div class="page_num">2</div>
+                        <div class="page_num">3</div>
+                        <div class="page_num">4</div>
+                        <div class="page_next">下一页 ></div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--尾部-->
+<footer id="cbs_footer">
+    <div class="container-fluid footer_content d-none d-md-block">
+        <div class="row">
+            <div class="footer_text d-flex align-items-center justify-content-center">
+                www.copyright.com 京ICP备09080213号
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../src/js/plugins/jquery-3.1.1.min.js"></script>
+<script src="../src/js/plugins/jquery.row-grid.js"></script>
+<script src="../src/js/plugins/popper.min.js"></script>
+<script src="../src/js/plugins/bootstrap.min.js"></script>
+<script src="../src/js/plugins/bootstrap3-typeahead.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.min.js"></script>
+<script>
+    $(function () {
+        var $container = $('.masonry');
+        $container.imagesLoaded(function () {
+            $container.masonry({
+
+                itemSelector: '.item'
+            });
+            
+        });
+    });
+</script>
+</body>
 </html>

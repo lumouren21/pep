@@ -91,6 +91,9 @@ $(document).ready(function() {
             $(this).siblings('div').removeClass('native')
             setTimeout(function(){
                 $(".container0").rowGrid({itemSelector: ".item", minMargin: 10, maxMargin: 25, firstItemClass: "first-item"});
+                $('.container0').masonry({
+                    itemSelector: '.item'
+                });
             },50)
             return 
         }
@@ -108,7 +111,7 @@ $(document).ready(function() {
         $("#searchWords").val(textVal)
     })
     setTimeout(function(){
-        $(".container0").rowGrid({itemSelector: ".item", minMargin: 10, maxMargin: 25, firstItemClass: "first-item"});
+        //$(".container0").rowGrid({itemSelector: ".item", minMargin: 10, maxMargin: 25, firstItemClass: "first-item"});
     },50)
 })
 function getUrlParam(variable) {
