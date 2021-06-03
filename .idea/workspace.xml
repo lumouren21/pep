@@ -11,23 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6b97a07-be9f-481c-a965-36facb788a8f" name="Default Changelist" comment="修改目录结构，使用gulp管理">
-      <change afterPath="$PROJECT_DIR$/dist/js/imagesloaded.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/imagesloaded.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/masonry.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/jquery-3.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/upload/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/material.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/material.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/pep.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/pep.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/pep.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/pep.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/material.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/material.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/material.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/material.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/component/hot-book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/component/hot-book.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/component/pep-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/component/pep-card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/component/recommend.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/component/recommend.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/component/social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/component/social.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/component/tg-book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/component/tg-book.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/pep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pep.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,17 +42,27 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/js" />
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\css" />
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\tools" />
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\images\books" />
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\dist" />
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\src\sass" />
@@ -76,30 +70,6 @@
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\js\plugins" />
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\sass\plugins" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\css" />
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\tools" />
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\images\books" />
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="default" type="js.build_tools.gulp" temporary="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>default</task>
-      </tasks>
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gulp.js.default" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -111,9 +81,9 @@
       <updated>1621320583363</updated>
       <workItem from="1621320584934" duration="371000" />
       <workItem from="1621494675816" duration="42974000" />
-      <workItem from="1622707784639" duration="3589000" />
-      <workItem from="1622726971827" duration="348000" />
-      <workItem from="1622727335826" duration="4410000" />
+      <workItem from="1622442615045" duration="9068000" />
+      <workItem from="1622455347261" duration="3000" />
+      <workItem from="1622692038933" duration="14065000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1621320705019</created>
@@ -168,58 +138,5 @@
     <MESSAGE value="修改首页样式" />
     <MESSAGE value="修改目录结构，使用gulp管理" />
     <option name="LAST_COMMIT_MESSAGE" value="修改目录结构，使用gulp管理" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1532" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621590085961">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-1532" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1621590085961" />
-    <state x="-1501" y="524" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1622011039381">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-1501" y="524" key="#com.intellij.ide.macro.MacrosDialog/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1622011039381" />
-    <state x="-1495" y="338" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1622010608750">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-1495" y="338" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1622010608750" />
-    <state x="-1550" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622022201792">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-1550" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1622022201792" />
-    <state x="-2468" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1621859840657">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-2468" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1621859840657" />
-    <state x="-1625" y="476" width="748" height="687" key="EditFileWatcherDialog" timestamp="1622020611744">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-1625" y="476" width="748" height="687" key="EditFileWatcherDialog/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1622020611744" />
-    <state x="-1501" y="455" key="FileChooserDialogImpl" timestamp="1622011072956">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-1501" y="455" key="FileChooserDialogImpl/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1622011072956" />
-    <state x="586" y="256" key="SettingsEditor" timestamp="1622726996866">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="586" y="256" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1622726996866" />
-    <state x="-1779" y="344" key="SettingsEditor/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1622022126792" />
-    <state x="-1688" y="432" key="Vcs.Push.Dialog.v2" timestamp="1622023875510">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-1688" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1622023875510" />
-    <state x="872" y="481" key="Vcs.Push.Dialog.v2/0.0.2560.1560/-2560.0.2560.1400@0.0.2560.1560" timestamp="1621833844347" />
-    <state x="-1258" y="252" width="596" height="536" key="find.popup" timestamp="1622709569899">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1258" y="252" width="596" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1622709569899" />
-    <state x="-1624" y="330" width="672" height="677" key="run.anything.popup" timestamp="1622020125110">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-1624" y="330" width="672" height="677" key="run.anything.popup/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1622020125110" />
-    <state x="-1617" y="319" width="672" height="609" key="search.everywhere.popup" timestamp="1621906933481">
-      <screen x="-2560" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-1617" y="319" width="672" height="609" key="search.everywhere.popup/0.0.2560.1560/-2560.0.2560.1400@-2560.0.2560.1400" timestamp="1621906933481" />
-    <state x="943" y="355" width="672" height="678" key="search.everywhere.popup/0.0.2560.1560/-2560.0.2560.1400@0.0.2560.1560" timestamp="1621834797873" />
   </component>
 </project>

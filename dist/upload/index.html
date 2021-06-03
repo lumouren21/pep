@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>首页</title>
+  <link rel="stylesheet" href="../css/pep.css"/>
+  <script src="../js/pep.min.js"></script>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <style type="text/css">
+    .upload-container {
+      padding: 24px 0;
+    }
+    .upload-container .nav-item {
+    }
+    .upload-container .tab-file-title {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 3% 6px;
+    }
+    .upload-container .tab-file-size {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .upload-container .tab-file-upload {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .upload-container .tab-file-upload button {
+      position: relative;
+    }
+    .upload-container .tab-file-upload button input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      top: 0;
+      left: 0;
+    }
+
+    .upload-container .tab-file-upload span {
+      margin-right: 12px;
+    }
+    .upload-container .tab-file-table {
+      width: calc(100% - 6%);
+      max-height: 600px;
+      overflow-y: auto;
+      margin: 16px 3%;
+    }
+    .upload-container .tab-file-table .tab-file-table-null {
+      border: 1px dashed #cccccc;
+      height: 400px;
+      font-size: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e0e0e0;
+      position: relative;
+    }
+    .upload-container .tab-file-table .tab-file-table-null input {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+    }
+    .upload-container .tab-file-table ul {
+      border: 1px solid #cccccc;
+      padding: 0;
+      margin: 0;
+    }
+    .upload-container .tab-file-table ul li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+    }
+    .upload-container .tab-file-table ul li .ico {
+      width: 60px;
+      height: 60px;
+    }
+    .upload-container .tab-file-table ul li .name {
+
+    }
+    .upload-container .tab-file-table ul li .size {
+      max-width: 120px;
+    }
+    .upload-container .tab-file-table ul li .close {
+      max-width: 28px;
+      min-width: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .upload-container .bottom-button {
+      padding: 16px 3%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .upload-container .bottom-button button {
+      margin-left: 12px;
+    }
+
+    .upload-container .tab-metadata-box {
+      border-top: 1px solid #cccccc;
+      margin: 16px 3%;
+    }
+    .upload-container .tab-metadata-box .row {
+      margin-bottom: 12px;
+    }
+    .upload-container .tab-metadata-box .row .input-name {
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .upload-container .tab-metadata-box .title {
+      margin: 16px 0;
+    }
+    .upload-container .tab-metadata-box .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .upload-container .tab-metadata-box .content .item {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #cccccc;
+      font-size: 16px;
+      margin-bottom: 10px;
+      position: relative;
+      padding: 0 30px 0 15px;
+      margin-right: 12px;
+    }
+    .upload-container .tab-metadata-box .content .item span {
+      position: absolute;
+      top: 0;
+      right: 2px;
+      width: 20px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #cccccc;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .upload-container .tab-metadata-box .add-button {
+      border: 1px solid #cccccc;
+      width: 40px;
+      height: 40px;
+    }
+    .upload-container .tab-metadata-box .add-input {
+      height: 40px;
+      display: none;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .upload-container .tab-metadata-box .add-input input {
+      width: 120px;
+    }
+    .upload-container .tab-metadata-box .add-input button {
+      border: 1px solid #cccccc;
+      margin-left: 8px;
+    }
+
+    .upload-container .visible-block {
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .upload-container .visible-block {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+<!--头部-->
+<header id="cbs_header">
+  <div class="container-fluid top_content">
+    <div class="row">
+      <div class="col-5 offset-lg-1 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html">
+          <img src="../images/index/logo.png">
+          <div class="top_content_word">基础资源统一发放平台</div>
+        </a>
+      </div>
+      <div class="col-lg-4 d-lg-block top_seach col-5">
+        <div class="top_input d-flex justify-content-end">
+          <input type="text" placeholder="请输入关键字" data-provide="typeahead" autocomplete="off"
+                 id="searchWords">
+          <div class="top_search d-flex align-items-center">
+            <img src="../images/index/search.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile">
+        <div class="top_profile_img">
+          <img src="../images/index/myhead.jpg" alt="">
+        </div>
+        <div class="dropdown show top_arrows">
+          <img src="../images/index/triangle.png" class="dropdown-toggle" id="dropdownMenuLink"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <div class="dropdown_content">
+              <img src="../images/index/source.png" alt="">
+              <a class="dropdown-item" href="mySource.html">我的资源</a>
+            </div>
+            <div class="dropdown_content">
+              <img src="../images/index/attention.png" alt="">
+              <a class="dropdown-item" href="myAttention.html">我的关注</a>
+            </div>
+            <div class="dropdown_content">
+              <img src="../images/index/collect.png" alt="">
+              <a class="dropdown-item" href="myCollect.html">我的收藏</a>
+            </div>
+            <div class="dropdown_content">
+              <img src="../images/index/record.png" alt="">
+              <a class="dropdown-item" href="MyRecord.html">我的记录</a>
+            </div>
+            <div class="dropdown_content">
+              <img src="../images/index/download.png" alt="">
+              <a class="dropdown-item" href="myDownload.html">我的下载</a>
+            </div>
+            <div class="dropdown_content top_last_word">
+              <img src="../images/index/logout.png" alt="">
+              <a class="dropdown-item" href="#">退出登录</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--导航栏-->
+<section>
+  <div class="container-fluid bottom_content">
+    <div class="row">
+      <div class="offset-2 col-4 col-lg-4 offset-lg-3 nav_box">
+        <ul class="d-flex text-center bottom_ul">
+          <li class="active">首页</li>
+          <li class="position-relative">
+            专区
+            <ul class="nav_ul show_drop">
+              <li><a href="material.html" class="nav_a">基础资源库</a></li>
+              <li><a href="material.html" class="nav_a">基础资源库</a></li>
+              <li><a href="material.html" class="nav_a">基础资源库</a></li>
+            </ul>
+          </li>
+          <li><a href="sourceStatistics.html">资源统计</a></li>
+        </ul>
+      </div>
+      <div class="offset-lg-1 col-lg-8 d-lg-block top_seach0 col-5">
+        <div class="top_input d-flex justify-content-end">
+          <input type="text" placeholder="请输入关键字" data-provide="typeahead" autocomplete="off"
+                 id="searchWordsM">
+          <div class="top_search d-flex align-items-center">
+            <img src="../images/index/search.png" alt="">
+          </div>
+        </div>
+      </div>
+      <button onclick="open_menu()" type="button"
+              class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile hamburger is-closed animated fadeInLeft">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+<div class="overlay" onclick="close_menu()"></div>
+
+<!-- 手机导航 -->
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-box" id="sidebar-wrapper" role="navigation">
+  <ul class="nav sidebar-nav">
+    <li class="sidebar-brand">
+      <a href="#">
+        菜单
+      </a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-fw fa-home"></i> 首页</a>
+    </li>
+    <li class="dropdown">
+      <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 专区
+        <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="material.html">基础资源库</a></li>
+        <li><a href="material.html">基础资源库</a></li>
+        <li><a href="material.html">基础资源库</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="sourceStatistics.html"><i class="fa fa-fw fa-bank"></i>资源统计</a>
+    </li>
+  </ul>
+</nav>
+<div class="container upload-container">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <section class="card">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="file-tab" data-toggle="tab" href="#file" role="tab" aria-controls="file" aria-selected="true">文件</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="metadata-tab" data-toggle="tab" href="#metadata" role="tab" aria-controls="metadata" aria-selected="false">元数据</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="file" role="tabpanel" aria-labelledby="file-tab">
+            <div class="tab-file-title">
+              <div class="tab-file-size"><span><span id="files-num">0</span>个文件上传</span><span>（大小<span id="files-size">0.00</span>M）</span></div>
+              <div class="tab-file-upload">
+                <span class="visible-block">拖拽资源到下面的区域，或者</span>
+                <button type="button" class="btn btn-success">
+                  选择文件
+                  <input type="file" multiple="multiple" id="tab-file-choice-input"/>
+                </button>
+              </div>
+            </div>
+            <div class="tab-file-table">
+              <div class="tab-file-table-null">
+                <span class="visible-block">将文件拖动到此或者</span>点击选择文件
+                <input type="file" multiple="multiple" id="tab-file-drag-input"/>
+              </div>
+              <ul>
+<!--                <li>-->
+<!--                  <img class="ico"/>-->
+<!--                  <span class="name">我是文件名称</span>-->
+<!--                  <span class="size">150.44KB</span>-->
+<!--                  <span class="close">X</span>-->
+<!--                </li>-->
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="metadata" role="tabpanel" aria-labelledby="metadata-tab">
+            <div class="tab-metadata-box">
+              <div class="title"><h5>基本信息</h5></div>
+              <div class="row">
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-name col-md-3 col-sm-3 col-xs-12">
+                    描述
+                  </div>
+                  <div class="input-group col-md-9 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" id="upload-describe"/>
+                  </div>
+                </div>
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-name col-md-3 col-sm-3 col-xs-12">
+                    版权授权时间
+                  </div>
+                  <div class="input-group col-md-9 col-sm-9 col-xs-12">
+                    <input type="datetime-local" class="form-control" id="upload-copyright-auth-date"/>
+                  </div>
+                </div>
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-name col-md-3 col-sm-3 col-xs-12">
+                    版权取消时间
+                  </div>
+                  <div class="input-group col-md-9 col-sm-9 col-xs-12">
+                    <input type="datetime-local" class="form-control" id="upload-copyright-cancel-date"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-name col-md-3 col-sm-3 col-xs-12">
+                    版权提供方
+                  </div>
+                  <div class="input-group col-md-9 col-sm-9 col-xs-12">
+                    <select class="form-control" id="upload-copyright-provider" >
+                      <option value="cp1" selected>copyright-provider1</option>
+                      <option value="cp2">copyright-provider2</option>
+                      <option value="cp3">copyright-provider3</option>
+                      <option value="cp4">copyright-provider4</option>
+                      <option value="cp5">copyright-provider5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-name col-md-3 col-sm-3 col-xs-12">
+                    版权使用范围
+                  </div>
+                  <div class="input-group col-md-9 col-sm-9 col-xs-12">
+                    <select class="form-control" id="upload-copyright-scope">
+                      <option value="cs1">copyright-scope1</option>
+                      <option value="cs2">copyright-scope2</option>
+                      <option value="cs3" selected>copyright-scope3</option>
+                      <option value="cs4">copyright-scope4</option>
+                      <option value="cs5">copyright-scope5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-name col-md-3 col-sm-3 col-xs-12">
+                    过期时间
+                  </div>
+                  <div class="input-group col-md-9 col-sm-9 col-xs-12">
+                    <input type="datetime-local" class="form-control" id="upload-expiration-date"/>
+                  </div>
+                </div>
+
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-name col-md-3 col-sm-3 col-xs-12">
+                    <span style="color: red;">*</span>内容共享
+                  </div>
+                  <div class="input-group col-md-9 col-sm-9 col-xs-12">
+                    <select class="form-control" id="upload-content-sharing">
+                      <option value="csg1">content-sharing1</option>
+                      <option value="csg2">content-sharing2</option>
+                      <option value="csg3">content-sharing3</option>
+                      <option value="csg4">content-sharing4</option>
+                      <option value="csg5" selected>content-sharing5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-metadata-box">
+              <div class="title"><h5>业务信息</h5></div>
+              <div class="row">
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-name col-md-3 col-sm-3 col-xs-12">
+                    类别
+                  </div>
+                  <div class="input-group input-group col-md-9 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" id="upload-category"/>
+                  </div>
+                </div>
+                <div class="row col-md-6 col-sm-12 col-xs-12">
+                  <div class="input-name col-md-3 col-sm-3 col-xs-12">
+                    语种
+                  </div>
+                  <div class="input-group input-group col-md-9 col-sm-9 col-xs-12">
+                    <select class="form-control" id="upload-language">
+                      <option value="ul1">1</option>
+                      <option value="ul2">2</option>
+                      <option value="ul3">3</option>
+                      <option selected value="ul4">4</option>
+                      <option value="ul5">5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-metadata-box">
+              <div class="title"><h5>自定义标签</h5></div>
+              <div class="content">
+<!--                <div class="item">-->
+<!--                  我是标签3123-->
+<!--                </div>-->
+                <div class="add-button">
+                  <button type="button" class="btn btn-default">+</button>
+                </div>
+                <div class="add-input">
+                  <input type="text" class="form-control" id="upload21-category"/>
+                  <button type="button" class="btn btn-default">添加</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-button">
+            <button type="button" class="btn btn-primary" id="upload-complete">完成</button>
+            <button type="button" class="btn btn-default" id="upload-reset">重置</button>
+            <button type="button" class="btn btn-default" id="upload-cancel">取消</button>
+          </div>
+      </section>
+    </div>
+  </div>
+</div>
+<!--尾部-->
+<footer id="cbs_footer">
+  <div class="container-fluid footer_content d-none d-md-block">
+    <div class="row">
+      <div class="footer_text d-flex align-items-center justify-content-center">
+        www.copyright.com 京ICP备09080213号
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  {
+    let files = [];
+    let isUploadFileStatus = false;
+
+    /**
+     * 添加文件的方法
+     */
+    $('.upload-container #tab-file-choice-input').on('change', function () {
+      for (let i = 0; i < this.files.length; i++) {
+        const fr = new FileReader();
+        const img = this.files.item(i);
+        img.id = String(new Date().getTime()) + String(Math.random() * 100);
+        files.push(img);
+        $('.upload-container .tab-file-table-null').hide();
+        fr.readAsDataURL(img);
+        fr.onload = function() {
+          const src = this.result;
+          $('.upload-container .tab-file-table ul').append('<li>\n' +
+            '                  <img class="ico" src="' + src + '"/>\n' +
+            '                  <span class="name">' + img.name + '</span>\n' +
+            '                  <span class="size">' + Number(img.size / 1024).toFixed(1) + 'KB</span>\n' +
+            '                  <span class="close" onclick="uploadContainerDeleteFileInput(this, \'' + img.id + '\')">X</span>\n' +
+            '                </li>');
+        }
+      }
+      let size = 0;
+      for (let i = 0; i < files.length; i++) {
+        size += files[i].size;
+      }
+      $('.upload-container #files-num').text(files.length);
+      $('.upload-container #files-size').text(Number(size / 1024 / 1024).toFixed(2));
+      this.value = '';
+    });
+    $('.upload-container #tab-file-drag-input').on('change', function () {
+      for (let i = 0; i < this.files.length; i++) {
+        const fr = new FileReader();
+        const img = this.files.item(i);
+        img.id = String(new Date().getTime()) + String(Math.random() * 100);
+        files.push(img);
+        $('.upload-container .tab-file-table-null').hide();
+        fr.readAsDataURL(img);
+        fr.onload = function() {
+          const src = this.result;
+          $('.upload-container .tab-file-table ul').append('<li>\n' +
+            '                  <img class="ico" src="' + src + '"/>\n' +
+            '                  <span class="name">' + img.name + '</span>\n' +
+            '                  <span class="size">' + Number(img.size / 1024).toFixed(1) + 'KB</span>\n' +
+            '                  <span class="close" onclick="uploadContainerDeleteFileInput(this, \'' + img.id + '\')">X</span>\n' +
+            '                </li>');
+        }
+      }
+      let size = 0;
+      for (let i = 0; i < files.length; i++) {
+        size += files[i].size;
+      }
+      $('.upload-container #files-num').text(files.length);
+      $('.upload-container #files-size').text(Number(size / 1024 / 1024).toFixed(2));
+      this.value = '';
+    });
+
+    /**
+     * 删除文件的方法
+     */
+    function uploadContainerDeleteFileInput(obj, id) {
+      obj.parentNode.remove();
+      for (let i = 0; i < files.length; i++) {
+        if (files[i].id === id) {
+          files.splice(i, 1);
+          break;
+        }
+      }
+      if (files.length === 0) {
+        $('.upload-container .tab-file-table-null').show();
+      }
+      let size = 0;
+      for (let i = 0; i < files.length; i++) {
+        size += files[i].size;
+      }
+      $('.upload-container #files-num').text(files.length);
+      $('.upload-container #files-size').text(Number(size / 1024 / 1024).toFixed(2));
+    }
+
+    /**
+     * 删除全部的文件的方法
+     */
+    function uploadContainerDeleteFileAll() {
+      files = []
+      $('.upload-container .tab-file-table ul li').remove();
+      $('.upload-container .tab-file-table-null').show();
+      let size = 0;
+      for (let i = 0; i < files.length; i++) {
+        size += files[i].size;
+      }
+      $('.upload-container #files-num').text(files.length);
+      $('.upload-container #files-size').text(Number(size / 1024 / 1024).toFixed(2));
+    }
+
+    /**
+     * 删除全部的文件的方法
+     */
+    function uploadContainerDeleteMetadataAll() {
+      $('.upload-container #upload-describe').val('');
+      $('.upload-container #upload-copyright-auth-date').val('');
+      $('.upload-container #upload-copyright-cancel-date').val('');
+      $('.upload-container #upload-copyright-provider').val('cp1');
+      $('.upload-container #upload-copyright-scope').val('cs1');
+      $('.upload-container #upload-expiration-date').val('');
+      $('.upload-container #upload-content-sharing').val('csg1');
+      $('.upload-container #upload-category').val('');
+      $('.upload-container #upload-language').val('ul1');
+      $('.upload-container .tab-metadata-box .content .item').remove();
+    }
+
+    /**
+     * 确认
+     */
+    $('.upload-container #upload-complete').on('click', function (start, end) {
+      if (files.length > 0) {
+        isUploadFileStatus = true;
+        const form = new FormData();
+        form.append('upload-describe', $('.upload-container #upload-describe').val());
+        form.append('upload-copyright-auth-date', $('.upload-container #upload-copyright-auth-date').val());
+        form.append('upload-copyright-cancel-date', $('.upload-container #upload-copyright-cancel-date').val());
+        form.append('upload-copyright-provider', $('.upload-container #upload-copyright-provider').val());
+        form.append('upload-copyright-scope', $('.upload-container #upload-copyright-scope').val());
+        form.append('upload-expiration-date', $('.upload-container #upload-expiration-date').val());
+        form.append('upload-content-sharing', $('.upload-container #upload-content-sharing').val());
+        form.append('upload-category', $('.upload-container #upload-category').val());
+        form.append('upload-language', $('.upload-container #upload-language').val());
+        const tags = [];
+        for (let i = 0; i < $('.upload-container .tab-metadata-box .content .item').length; i++) {
+          const c = $('.upload-container .tab-metadata-box .content .item')[i].innerText;
+          // 删除 \nx
+          tags.push(c.substring(0, c.length - 2));
+        }
+        console.log(tags);
+        form.append('list-tags', tags.join(','));
+        for (let i = 0; i < files.length; i++) {
+          form.append('file', files[i]);
+        }
+        $.ajax({
+          url: 'https://baidu.com',
+          type: 'POST',
+          data: form,
+          processData: false,
+          contentType: false,
+          success: function(data){
+            console.log(data);
+            uploadContainerDeleteFileAll();
+            isUploadFileStatus = false;
+          },
+          error: function(e){
+            console.log(e);
+            isUploadFileStatus = false;
+          }
+        });
+      }
+    });
+
+    /**
+     * 重置
+     */
+    $('.upload-container #upload-reset').on('click', function () {
+      if (isUploadFileStatus) {
+      } else {
+        uploadContainerDeleteFileAll();
+        uploadContainerDeleteMetadataAll();
+      }
+    });
+
+    /**
+     * 取消
+     */
+    $('.upload-container #upload-cancel').on('click', function () {
+      if (isUploadFileStatus) {
+      } else {
+        uploadContainerDeleteFileAll();
+        uploadContainerDeleteMetadataAll();
+      }
+    });
+
+    /**
+     * 自定义标签的输入框显示
+     */
+    $('.upload-container .tab-metadata-box .add-button button').on('click', function () {
+      $('.upload-container .tab-metadata-box .add-button').hide();
+      $('.upload-container .tab-metadata-box .add-input')[0].style.display = 'flex';
+    });
+
+    /**
+     * 自定义标签的--添加
+     */
+    $('.upload-container .tab-metadata-box .add-input button').on('click', function () {
+      const val = $('.upload-container .tab-metadata-box .add-input input')[0].value;
+      if (val !== null && val !== undefined && val.length > 0) {
+        // 添加节点
+        $('.upload-container .tab-metadata-box .add-button').before($('<div class="item">' + val + '<span onclick="uploadContainerMetadataTagDelete(this)">X</span></div>'));
+        $('.upload-container .tab-metadata-box .add-input').hide();
+        $('.upload-container .tab-metadata-box .add-button').show();
+        $('.upload-container .tab-metadata-box .add-input input')[0].value = '';
+      }
+    });
+
+    /**
+     * 自定义标签的--删除
+     */
+    function uploadContainerMetadataTagDelete(obj) {
+      obj.parentNode.remove();
+    }
+
+  }
+</script>
+
+</body>
+</html>
