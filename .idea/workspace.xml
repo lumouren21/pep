@@ -11,9 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6b97a07-be9f-481c-a965-36facb788a8f" name="Default Changelist" comment="修改目录结构，使用gulp管理">
-      <change afterPath="$PROJECT_DIR$/dist/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/upload/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/material.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/material.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pageDetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pageDetail.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +137,13 @@
     <MESSAGE value="更新最近更新组件" />
     <MESSAGE value="修改首页样式" />
     <MESSAGE value="修改目录结构，使用gulp管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改目录结构，使用gulp管理" />
+    <MESSAGE value="修复样式，添加masonry" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复样式，添加masonry" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1622734115652">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1622734115652" />
   </component>
 </project>
