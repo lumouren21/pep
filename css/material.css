@@ -3,7 +3,7 @@
 }
 .top_input {
   height: 38px;
-  margin-top: 20px 0 5px;
+  margin-top: 20px  5px;
 }
 .top_input input {
   width: 45%;
@@ -70,6 +70,11 @@ h3 {
 		padding: 1px 8px;
 		margin-right: 20px;
 		border-radius: 10px;
+		cursor: pointer;
+	}
+	.in_search ul li:hover{
+		color: #fff;
+		background:#035056;
 	}
 }
 @media (max-width:1200px) {
