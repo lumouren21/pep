@@ -12,7 +12,6 @@ body {
   background-color: #F8F8F8;
   min-height: 100vh;
 }
-#cbs_header {}
 #cbs_header .top_content {
   margin-top: 40px;
   margin-bottom:15px;
@@ -21,6 +20,10 @@ body {
 .justify-content-lg-start a{
   display: contents;
 }
+.bottom_ul li.active {
+  background: #FA7D00;
+}
+
 @media (min-width: 576px) {
   .top_content_word {
     margin-left:10px;
@@ -162,7 +165,7 @@ body {
     display: block;
     color: #FFFFFF;
   }
-  .nav_ul {
+ .nav_ul {
     position: absolute;
     left: -40px;
     z-index: 999;
@@ -493,5 +496,7 @@ body {
   color: #394A51!important
 }
 #cbs_img img{width: 100%}
-.typeahead .active{background: none}
-.typeahead a{color: #035056;font-weight: bold}
+.typeahead .active{background: #035056;}
+.typeahead .active a{
+  color: #f0f0f0;}
+.typeahead a{color: #035056;}

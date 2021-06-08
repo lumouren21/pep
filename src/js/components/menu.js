@@ -1,14 +1,23 @@
 
 let index = $('.attention_content ul li.active').index();
+let suggestionUrl = 'http://192.168.190.122:1876/dam-api/search/suggestion';
 $(function(){
     //$(".recommend_content_two").css("height", $(".recommend_content_one").height());
     $('#searchWords,#searchWordsM').typeahead({
         source: function (query, process) {
             //query是输入值
-            var data=[
-                '语文',
-                '语文教材'
-            ]
+            let data=[]
+            $.ajax({
+                url: suggestionUrl + "/" + query, // 目标资源
+                cache: false, //true 如果当前请求有缓存的话，直接使用缓存。如果该属性设置为 false，则每次都会向服务器请求
+                async: false, //默认是true，即为异步方式-
+                dataType: "json", // 服务器响应的数据类型
+                type: "get", // 请求方式
+                contentType: "application/json;charset=utf-8",
+                success: function (obj) {
+                    data = obj.data
+                }
+            })
             process(data);
         },
         updater: function (item) {
@@ -30,6 +39,7 @@ $(function(){
           $(".nav_ul").addClass('show_drop');
       }
     })*/
+
     $('body').click(function(event){
         if($(event.target).hasClass("position-relative")){
             if(!$(".nav_ul").hasClass("show_drop")){
