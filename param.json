@@ -1,0 +1,98 @@
+{
+  "assetPresentation": {
+    "asset": {
+      "metadata": {
+        "metadata_element_list": [
+          {
+            "id": "PEP.FIELD.RESOURCE.SHARE.TYPE",
+            "type": "com.artesia.metadata.MetadataField",
+            "value": {
+              "value": {
+                "type": "string",
+                "value": ""
+              }
+            }
+          },
+          {
+            "id": "PEP.FIELD.RESOURCE.TYPE",
+            "type": "com.artesia.metadata.MetadataField",
+            "value": {
+              "value": {
+                "type": "string",
+                "value": ""
+              }
+            }
+          },
+          {
+            "id": "PEP.FIELD.RESOURCE.LANG",
+            "type": "com.artesia.metadata.MetadataField",
+            "value": {
+              "value": {
+                "type": "string",
+                "value": ""
+              }
+            }
+          },
+          {
+            "id": "PEP.FIELD.RESOURCE.COPYRIGHT.START",
+            "type": "com.artesia.metadata.MetadataField",
+            "value": {
+              "value": {
+                "type": "dataTime",
+                "value": ""
+              }
+            }
+          },
+          {
+            "id": "PEP.FIELD.RESROUCE.COPYRIGHT.END",
+            "type": "com.artesia.metadata.MetadataField",
+            "value": {
+              "value": {
+                "type": "dateTime",
+                "value": ""
+              }
+            }
+          },
+          {
+            "id": "PEP.FIELD.RESROUCE.COPYRIGHT.SUPPLIER",
+            "type": "com.artesia.metadata.MetadataField",
+            "value": {
+              "value": {
+                "type": "string",
+                "value": ""
+              }
+            }
+          },
+          {
+            "id": "PEP.FIELD.RESROUCE.COPYRIGHT.SCOPE",
+            "type": "com.artesia.metadata.MetadataField",
+            "value": {
+              "value": {
+                "type": "string",
+                "value": ""
+              }
+            }
+          },
+          {
+            "id": "PEP.TABULAR.FIELDS.RESOURCES.TAG_NAME",
+            "type": "com.artesia.metadata.MetadataTableField",
+            "values": [
+              {
+                "value": {
+                  "type": "string",
+                  "value": "等等"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "metadata_model_id": "PEP.MODEL.RESOURCE.ASSET",
+      "security_policy_list": [
+        {
+          "id": 35
+        }
+      ]
+    }
+  }
+}

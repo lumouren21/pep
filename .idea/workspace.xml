@@ -6,14 +6,79 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6b97a07-be9f-481c-a965-36facb788a8f" name="Default Changelist" comment="修改目录结构，使用gulp管理">
+    <list default="true" id="c6b97a07-be9f-481c-a965-36facb788a8f" name="Default Changelist" comment="修复样式">
+      <change afterPath="$PROJECT_DIR$/component/catelog/catelogDetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/common/header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/common/header.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/common/navbar.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/common/script.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/common/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/user/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/user/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/common_function.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/common/footer.shtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/common/header.shtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/common/navbar-mobile.shtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/common/navbar.shtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/common/user/leftNav.shtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/myAttention.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/myRecord.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/myUpload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/handlebars.min-v4.7.7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/jquery.twbsPagination.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/upload/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/upload/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/upload/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/upload/import.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/upload/importtemplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/upload/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/param.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/plugins/handlebars.min-v4.7.7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/plugins/jquery.twbsPagination.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/vcgDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/component/left-nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/component/upload.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/plugins/font-awesome.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/material.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/material.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalog.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/pageDetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pageDetail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/PageDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PageDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/pep.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/pep.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/pep.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/pep.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/upload/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/upload/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/catalogInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/catalogInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/component/hot-book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/component/hot-book.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/pep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pep.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +89,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1shMtdn1VLgRP06fAbDYm2FSjRU" />
   <component name="ProjectLevelVcsManager">
@@ -49,19 +127,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/js" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/js/plugins" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dist/js" />
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\css" />
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\tools" />
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\images\books" />
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend" />
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\src\js\plugins" />
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\dist\upload" />
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\dist\css" />
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\dist\js" />
+      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\src\sass\plugins" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\dist" />
@@ -70,6 +148,50 @@
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\js\plugins" />
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\sass\plugins" />
     </key>
+  </component>
+  <component name="RunManager" selected="XSLT.Unnamed (1)">
+    <configuration name="Unnamed (1)" type="XSLT" factoryName="XSLT" temporary="true">
+      <option name="myOutputFile" value="" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" value="" />
+      <option name="myWorkingDirectory" value="" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <XsltFile url="file://$PROJECT_DIR$/component/common/navbar.xsl" />
+      <XmlFile url="file://$PROJECT_DIR$/component/common/header.xml" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XHTML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="XSLT" factoryName="XSLT" temporary="true">
+      <option name="myOutputFile" value="" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" value="" />
+      <option name="myWorkingDirectory" value="" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <XsltFile url="file://$PROJECT_DIR$/component/common/header.xsl" />
+      <XmlFile url="file://$PROJECT_DIR$/component/common/header.xml" />
+      <parameters />
+      <OutputType value="STDOUT" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="XSLT.Unnamed (1)" />
+        <item itemvalue="XSLT.Unnamed" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,6 +206,15 @@
       <workItem from="1622442615045" duration="9068000" />
       <workItem from="1622455347261" duration="3000" />
       <workItem from="1622692038933" duration="14065000" />
+      <workItem from="1623146366349" duration="599000" />
+      <workItem from="1623207366406" duration="10872000" />
+      <workItem from="1623304657120" duration="15653000" />
+      <workItem from="1623343684965" duration="7807000" />
+      <workItem from="1623742365886" duration="6436000" />
+      <workItem from="1623810130777" duration="11346000" />
+      <workItem from="1624246202588" duration="25176000" />
+      <workItem from="1624506380722" duration="4024000" />
+      <workItem from="1624546058313" duration="13117000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1621320705019</created>
@@ -113,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622023874037</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改视觉中国大家都再搜样式">
+      <created>1623123997614</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623123997614</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修复样式">
+      <created>1623131237730</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623131237730</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +269,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -138,12 +295,27 @@
     <MESSAGE value="修改首页样式" />
     <MESSAGE value="修改目录结构，使用gulp管理" />
     <MESSAGE value="修复样式，添加masonry" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复样式，添加masonry" />
+    <MESSAGE value="修改视觉中国大家都再搜样式" />
+    <MESSAGE value="修复样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复样式" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1622734115652">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1622734115652" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/dist/catalogInfo.html</url>
+          <line>94</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history>
+      <element expression="//segment[@rule-name='Primary']" />
+      <element expression="//segment[@rule-name='Primary']/node" />
+      <element expression="//site-map/segment/node/label[@key='main']/following-sibling::node[@visible-in-sitemap='true']" />
+    </history>
+    <find-history />
   </component>
 </project>

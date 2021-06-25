@@ -1,0 +1,203 @@
+.upload-container {
+  //padding: 24px 0;
+}
+
+.upload-container .nav-item {
+}
+
+.upload-container .file-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 3% 6px;
+}
+
+.upload-container .file-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-container .file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-container .file-upload button {
+  position: relative;
+}
+
+.upload-container .file-upload button input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.upload-container .file-upload span {
+  margin-right: 12px;
+}
+
+.upload-container .file-table {
+  width: calc(100% - 6%);
+  max-height: 600px;
+  overflow-y: auto;
+  margin: 16px 3%;
+}
+
+.upload-container .file-table .file-table-null {
+  border: 1px dashed #cccccc;
+  height: 400px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  position: relative;
+}
+
+.upload-container .file-table .file-table-null input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.upload-container .file-table ul {
+  border: 1px solid #cccccc;
+  padding: 0;
+  margin: 0;
+}
+
+.upload-container .file-table ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.upload-container .file-table ul li .ico {
+  width: 60px;
+  height: 60px;
+}
+
+.upload-container .file-table ul li .name {
+
+}
+
+.upload-container .file-table ul li .size {
+  max-width: 120px;
+}
+
+.upload-container .file-table ul li .close {
+  max-width: 28px;
+  min-width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.upload-container .bottom-button {
+  padding: 16px 3%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.upload-container .bottom-button button {
+  margin-left: 12px;
+}
+
+.upload-container .metadata-box {
+  //border-top: 1px solid #cccccc;
+  margin: 16px 3%;
+}
+
+.upload-container .metadata-box .row {
+  margin-bottom: 12px;
+}
+
+.upload-container .metadata-box .row .input-name {
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.upload-container .metadata-box .title {
+  margin: 16px 0;
+}
+
+.upload-container .metadata-box .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.upload-container .metadata-box .content .item {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0 30px 0 15px;
+  margin-right: 12px;
+}
+
+.upload-container .metadata-box .content .item span {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  width: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cccccc;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.upload-container .metadata-box .add-button {
+  border: 1px solid #cccccc;
+  width: 40px;
+  height: 40px;
+}
+
+.upload-container .metadata-box .add-input {
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.upload-container .metadata-box .add-input input {
+  width: 120px;
+}
+
+.upload-container .metadata-box .add-input button {
+  border: 1px solid #cccccc;
+  margin-left: 8px;
+}
+
+.upload-container .visible-block {
+  display: block;
+}
+.other-file-type{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  border: 1px dashed;
+}
+@media (max-width: 768px) {
+  .upload-container .visible-block {
+    display: none !important;
+  }
+}

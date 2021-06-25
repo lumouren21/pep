@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="/css/pep.css"/>
+    <link rel="stylesheet" href="/css/myAttention.css"/>
+    <script src="/js/pep.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<!--#include file="/common/header.shtml"-->
+<!--导航栏-->
+<!--#include file="/common/navbar.shtml"-->
+
+<!-- 手机导航 -->
+<!--#include file="/common/navbar-mobile.shtml"-->
+<section id="cbs_content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-1 col-10 attention_content">
+                <div class="attention_left">
+                    <ul class="attention_left_top">
+                        <li><img src="$URL_PREFIX[resources/img/index/myhead.jpg]" alt=""></li>
+                        <li id="userName"></li>
+                    </ul>
+                    <ul class="attention_left_bottom">
+
+                        <li>
+                            <a href="$PAGE_LINK[resources]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_0.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myResources']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myResources']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="active_m">
+                            <a href="$PAGE_LINK[attention]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_1_active.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myAttention']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myAttention']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="$PAGE_LINK[myCollection]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_2.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myCollect']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myCollect']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="$PAGE_LINK[history]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_3.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myRecord']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myRecord']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="$PAGE_LINK[download]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_4.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myDownload']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myDownload']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="$PAGE_LINK[upload]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_4.png]"></div>
+                                <div><span>我的上传</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="attention_right">
+                    <div class="container upload-container">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <section id="asset-meta-info" class="card">
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script id="#metadata" type="text/x-handlebars-template">
+        <div class="card-header">
+            <span class="card-title">修改元数据</span>
+        </div>
+        <div class="card-body">
+            <div class="metadata-box">
+                <div class="title"><h5>素材信息</h5></div>
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label>共享权限</label>
+                        <input metadata-class="com.artesia.metadata.MetadataField"
+                               metadata-type="string"
+                               type="text" class="form-control"
+                               id="PEP.FIELD.RESOURCE.SHARE.TYPE" value=""/>
+                    </div>
+                    <div class="form-group col-6">
+                        <label>类别</label>
+                        <input metadata-class="com.artesia.metadata.MetadataField"
+                               metadata-type="string"
+                               type="text" class="form-control"
+                               id="PEP.FIELD.RESOURCE.TYPE"/>
+                    </div>
+                    <div class="form-group col-6">
+                        <label>语种</label>
+                        <input metadata-class="com.artesia.metadata.MetadataField"
+                               metadata-type="string"
+                               type="text" class="form-control"
+                               id="PEP.FIELD.RESOURCE.LANG"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="metadata-box">
+                <div class="title"><h5>版权信息</h5></div>
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label>授权时间</label>
+                        <input metadata-class="com.artesia.metadata.MetadataField"
+                               metadata-type="dateTime"
+                               type="datetime-local" class="form-control"
+                               id="PEP.FIELD.RESOURCE.COPYRIGHT.START"/>
+                    </div>
+                    <div class="form-group col-6">
+                        <label>结束时间</label>
+                        <input metadata-class="com.artesia.metadata.MetadataField"
+                               metadata-type="dateTime"
+                               type="datetime-local" class="form-control"
+                               id="PEP.FIELD.RESROUCE.COPYRIGHT.END"/>
+                    </div>
+                    <div class="form-group col-6">
+                        <label>提供方</label>
+                        <input metadata-class="com.artesia.metadata.MetadataField"
+                               metadata-type="string"
+                               type="text" class="form-control"
+                               id="PEP.FIELD.RESROUCE.COPYRIGHT.SUPPLIER"/>
+                    </div>
+                    <div class="form-group col-6">
+                        <label>适用范围</label>
+                        <input metadata-class="com.artesia.metadata.MetadataField"
+                               metadata-type="string"
+                               type="text" class="form-control"
+                               id="PEP.FIELD.RESROUCE.COPYRIGHT.SCOPE"/>
+                    </div>
+                </div>
+            </div>
+            <div class="metadata-box">
+                <div class="title"><h5>自定义标签</h5></div>
+                <div class="content" metadata-class="com.artesia.metadata.MetadataTableField"
+                     id="PEP.TABULAR.FIELDS.RESOURCES.TAG_NAME" metadata-type="string">
+                    <div class="add-button">
+                        <button type="button" class="btn btn-default">+</button>
+                    </div>
+                    <div class="add-input">
+                        <input type="text" class="form-control" id="upload21-category"/>
+                        <button type="button" class="btn btn-default">添加</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-button">
+                <button type="button" class="btn btn-primary" id="upload-complete">完成</button>
+                <button type="button" class="btn btn-default" id="upload-reset">重置</button>
+                <button type="button" class="btn btn-default" id="upload-cancel">取消</button>
+            </div>
+        </div>
+</script>
+<!--尾部-->
+<!--#include file="/common/footer.shtml"-->
+<script src="../js/upload/upload.js"></script>
+</body>
+</html>

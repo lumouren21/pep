@@ -1,0 +1,30 @@
+{
+  "metadata_element_list": [
+    {
+      "id": "ARTESIA.FIELD.EXPIRATION DATE",
+      "type": "com.artesia.metadata.MetadataField",
+      "datatype": "dateTime",
+      "value": "2021-06-10T00:00:00"
+    },
+    {
+      "id": "PEP.FIELD.RESOURCE.LANG",
+      "type": "com.artesia.metadata.MetadataField",
+      "datatype": "string",
+      "value": "aaa"
+    },
+    {
+      "id": "PEP.TABULAR.FIELDS.RESOURCES.TAG_NAME",
+      "type": "com.artesia.metadata.MetadataTableField",
+      "datatype": "string",
+      "value": [
+        "dddd",
+        "eeee"
+      ]
+    }
+  ],
+  "metadata_model_id": "PEP.MODEL.RESOURCE.ASSET",
+  "security_policy_list": [
+    62,
+    15
+  ]
+}

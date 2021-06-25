@@ -1,0 +1,9 @@
+<footer id="cbs_footer">
+    <div class="container-fluid footer_content d-none d-md-block">
+        <div class="row">
+            <div class="footer_text d-flex align-items-center justify-content-center">
+                www.copyright.com 京ICP备09080213号
+            </div>
+        </div>
+    </div>
+</footer>

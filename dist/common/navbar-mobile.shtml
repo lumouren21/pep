@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-box" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+            <a href="#">
+                菜单
+            </a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-fw fa-home"></i> 首页</a>
+        </li>
+        <li class="dropdown">
+            <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 专区
+                <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="material.html">基础资源库</a></li>
+                <li><a href="material.html">基础资源库</a></li>
+                <li><a href="material.html">基础资源库</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="sourceStatistics.html"><i class="fa fa-fw fa-bank"></i>资源统计</a>
+        </li>
+    </ul>
+</nav>

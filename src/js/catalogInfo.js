@@ -206,7 +206,9 @@ $(function(){
 		// 获取输入内容
 		let value = $('.modal-body input').val()
 		if (!value) return
-		if (keyword.indexOf(value) != -1) return
+		if (keyword.indexOf(value) != -1){
+			alert("该标签已存在");
+		}
 		keyword.push(value)
 		let it_index =  keyword.length-1
 		$('.keyword_sub_word').append('<div class="keyword_word_info"><div>' + value + '</div><div class="del_keyword" data-id="' + it_index + '"><img src="images/catalog/delete.png" alt=""></div></div>')

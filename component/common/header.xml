@@ -1,0 +1,69 @@
+<Data>
+    <Datum ID="LOGO" Type="Image" Name="站点LOGO">
+        <Image Width="150" Height="100">
+            <Path>$URL_PREFIX/resources/img/index/logo.png</Path>
+            <Description>这是logo图片。</Description>
+        </Image>
+    </Datum>
+    <Datum ID="SITE_NAME" Type="String" Name="站点名称">基础资源统一发布平台</Datum>
+    <Group ID="MENU_GROUP" Name="菜单选项" Replicatable="true" CloneGroupID="kq0l93kc">
+        <Datum ID="NAME" Type="String" Name="名称">我的资源</Datum>
+        <Datum ID="IMAGE" Type="Image" Name="图标">
+            <Image Width="150" Height="100">
+                <Path>$URL_PREFIX/resources/img/index/source.png</Path>
+                <Description>图标</Description>
+            </Image>
+        </Datum>
+        <Datum ID="LINK" Name="链接" Type="PageLink">$PAGE_LINK[resources]</Datum>
+    </Group>
+    <Group ID="MENU_GROUP-0" Name="菜单选项" Replicatable="true" CloneGroupID="kq0l93kc">
+        <Datum ID="NAME-0" Type="String" Name="名称">我的关注</Datum>
+        <Datum ID="IMAGE-0" Type="Image" Name="图标">
+            <Image Width="150" Height="100">
+                <Path>$URL_PREFIX/resources/img/index/attention.png</Path>
+                <Description>图标</Description>
+            </Image>
+        </Datum>
+        <Datum ID="LINK-0" Name="链接" Type="PageLink">$PAGE_LINK[attention]</Datum>
+    </Group>
+    <Group ID="MENU_GROUP-1" Name="菜单选项" Replicatable="true" CloneGroupID="kq0l93kc">
+        <Datum ID="NAME-1" Type="String" Name="名称">我的收藏</Datum>
+        <Datum ID="IMAGE-1" Type="Image" Name="图标">
+            <Image Width="150" Height="100">
+                <Path>$URL_PREFIX/resources/img/index/collect.png</Path>
+                <Description>图标</Description>
+            </Image>
+        </Datum>
+        <Datum ID="LINK-1" Name="链接" Type="PageLink">$PAGE_LINK[myCollection]</Datum>
+    </Group>
+    <Group ID="MENU_GROUP-2" Name="菜单选项" Replicatable="true" CloneGroupID="kq0l93kc">
+        <Datum ID="NAME-2" Type="String" Name="名称">我的足迹</Datum>
+        <Datum ID="IMAGE-2" Type="Image" Name="图标">
+            <Image Width="150" Height="100">
+                <Path>$URL_PREFIX/resources/img/index/record.png</Path>
+                <Description>图标</Description>
+            </Image>
+        </Datum>
+        <Datum ID="LINK-2" Name="链接" Type="PageLink">$PAGE_LINK[history]</Datum>
+    </Group>
+    <Group ID="MENU_GROUP-3" Name="菜单选项" Replicatable="true" CloneGroupID="kq0l93kc">
+        <Datum ID="NAME-3" Type="String" Name="名称">我的下载</Datum>
+        <Datum ID="IMAGE-3" Type="Image" Name="图标">
+            <Image Width="150" Height="100">
+                <Path>$URL_PREFIX/resources/img/index/download.png</Path>
+                <Description>图标</Description>
+            </Image>
+        </Datum>
+        <Datum ID="LINK-3" Name="链接" Type="PageLink">$PAGE_LINK[download]</Datum>
+    </Group>
+    <Group ID="MENU_GROUP-4" Name="菜单选项" Replicatable="true" CloneGroupID="kq0l93kc">
+        <Datum ID="NAME-4" Type="String" Name="名称">我的上传</Datum>
+        <Datum ID="IMAGE-4" Type="Image" Name="图标">
+            <Image Width="150" Height="100">
+                <Path>$URL_PREFIX/resources/img/index/download.png</Path>
+                <Description>图标</Description>
+            </Image>
+        </Datum>
+        <Datum ID="LINK-4" Name="链接" Type="PageLink">$PAGE_LINK[upload]</Datum>
+    </Group>
+</Data>

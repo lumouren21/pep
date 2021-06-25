@@ -1,0 +1,748 @@
+<section id="cbs_catalog">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-1 col-10 catalog_info">
+                <div class="left_info">
+                    <div class="left_info_img"><img src=""></div>
+                    <div class="left_info_text">
+                        <div>
+								<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='topicId']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='topicId']}
+								</span>
+
+                        </div>
+                        <div>
+								<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='bookType']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='bookType']}
+								</span>
+
+                        </div>
+                        <div>
+								<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='author']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='author']}
+								</span>
+
+                        </div>
+                        <div>
+								<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='isbn']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='isbn']}
+								</span>
+                        </div>
+                        <div>
+								<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='publish']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='publish']}
+								</span>
+                        </div>
+                        <div>
+									<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='editorDate']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='editorDate']}
+								</span>
+
+                        </div>
+                        <div>
+								<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='editor']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='editor']}
+								</span>
+
+                        </div>
+                    </div>
+                    <div class="keyword_sub">
+                        <div class="keyword_sub_add">
+                            <div>
+                                <span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='tab']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='tab']}
+								</span>
+
+                            </div>
+                            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+                                <img src="$URL_PREFIX[resources/img/catalog/add.png]" alt="">
+                            </button>
+                        </div>
+                        <div class="keyword_sub_word">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="right_info">
+                    <div class="right_info_top">
+                        <div class="info_top_title"></div>
+                        <div class="info_top_word info_subject">
+									<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='subject']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='subject']}
+								</span>
+
+                        </div>
+                        <div class="info_top_word info_author_two">
+								<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='topicType']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='topicType']}
+								</span>
+                        </div>
+
+                        <div class="info_top_word info_edit">
+								<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='editorOffice']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='editorOffice']}
+								</span>
+
+                        </div>
+                        <div class="info_top_word info_source_from">
+								<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='resources']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='resources']}
+								</span>
+
+                        </div>
+                        <div class="info_top_word info_mark">
+									<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='abstract']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='abstract']}
+								</span>
+
+                        </div>
+                        <div class="info_top_tag">
+                            <div onclick="detail()">
+
+                                <div><img src="$URL_PREFIX[resources/img/catalog/detail.png]" alt=""></div>
+                                <div>
+
+                                    $MODEL{/Properties/Data/Datum[@ID='detail']}
+
+
+                                </div>
+
+                            </div>
+                            <div class="catalog-img">
+                                <div><img src="$URL_PREFIX[resources/img/catalog/images.png]" alt=""></div>
+                                <div>
+
+                                    $MODEL{/Properties/Data/Datum[@ID='iamge']}
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info_top_tag">
+                            <div>
+                                <div class="collect"></div>
+                                <div>
+                                    $MODEL{/Properties/Data/Datum[@ID='collect']}
+
+                                </div>
+                            </div>
+                            <div>
+                                <div><img src="$URL_PREFIX[resources/img/catalog/download.png]" alt=""></div>
+                                <div>
+                                    $MODEL{/Properties/Data/Datum[@ID='download']}
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info_top_tag_phone">
+                            <div onclick="detail()">
+
+                                <div><img src="$URL_PREFIX[resources/img/catalog/detail.png]" alt="" onclick></div>
+                                <div>
+                                    $MODEL{/Properties/Data/Datum[@ID='detail']}
+
+                                </div>
+
+                            </div>
+                            <div class="catalog-img">
+                                <div><img src="$URL_PREFIX[resources/img/catalog/images.png]" alt=""></div>
+                                <div>
+                                    $MODEL{/Properties/Data/Datum[@ID='iamge']}
+                                </div>
+                            </div>
+                            <div>
+                                <div class="collect"></div>
+                                <div>
+                                    $MODEL{/Properties/Data/Datum[@ID='collect']}
+                                </div>
+                            </div>
+                            <div>
+                                <div><img src="$URL_PREFIX[resources/img/catalog/download.png]" alt=""></div>
+                                <div>
+                                    $MODEL{/Properties/Data/Datum[@ID='download']}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_info_bottom">
+                        <div class="info_bottom_title">
+                               <span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='aboutBook']/@ID}">
+									$MODEL{/Properties/Data/Datum[@ID='aboutBook']}
+								</span>
+                        </div>
+                        <ul>
+                        </ul>
+                        <div class="info_bottom_img">
+                        </div>
+                        <div class="info_bottom_change">
+                            <div>
+                                <img src="$URL_PREFIX[resources/img/catalog/change.png]" alt="">
+                                <div>换一批</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="offset-1 col-10 catalog_other">
+            <div class="catalog_statistics">
+                <div class="catalog_statistics_text">
+							<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='catalogue']/@ID}">
+								$MODEL{/Properties/Data/Datum[@ID='catalogue']}
+							</span>
+
+                </div>
+                <div class="log_box log_ul_box">
+                    <div class="word_one marginTop0"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_one marginTop0"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                    <div class="word_two marginTop0 bottomText"></div>
+                </div>
+            </div>
+            <div class="catalog_accessory">
+                <div class="catalog_accessory_text">
+                            <span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='aboutAnner']/@ID}">
+								$MODEL{/Properties/Data/Datum[@ID='aboutAnner']}
+							</span></div>
+                <ul class="log_ul_box"></ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">添加关键字</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="新增关键字" autocomplete="off">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button id="saveBtn" type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 关键字删除弹窗 -->
+<div class="mask_layer mask_hidden">
+    <div class="pop_window">
+        <h2>是否删除?</h2>
+        <div class="pop_btn">
+            <div class="pop_cancle">取消</div>
+            <div class="pop_del">删除</div>
+        </div>
+    </div>
+</div>
+<div class="mask_layer0 mask_hidden">
+    <div class="pop_window">
+        <h2>至少保留一个标签</h2>
+        <div class="pop_btn">
+            <div class="pop_cancle">确定</div>
+        </div>
+    </div>
+</div>
+<!--附件图片展示-->
+<div class="mask_layer2 mask_hidden">
+    <div class="pop_del2">关闭</div>
+    <div class="mycenter"><img src=""></div>
+</div>
+
+<!--图集展示-->
+<div class="mask_layer3 mask_hidden" >
+    <div class="pop_del3">关闭</div>
+    <!--大图-->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+        </div>
+    </div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <!--小图-->
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    let historyUrl ="http://192.168.190.122:1876/dam-api/personal/history"
+    let images
+    let id
+    let totalPage
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) {
+                return pair[1];
+            }
+        }
+        return (false);
+    }
+    function detail(){
+        window.open("$PAGE_LINK[bookContent]bookTopicId="+id)
+    }
+
+
+
+
+    function catalogue() {
+
+
+        id = getQueryVariable("topicId")
+
+
+        let url = "http://192.168.190.122:1876/dam-api/book/bookDetail?topicId="+id
+        let xmlUrl = "http://192.168.190.122:1876/dam-api/search/xml/" +id
+
+        let aboutBookUrl = "http://192.168.190.122:1876/dam-api/book/aboutBook"
+        let updateKeyWordUrl = "http://192.168.190.122:1876/dam-api/book/tag?topicId="+id
+        let searchKeyWordUrl = "http://192.168.190.122:1876/dam-api/book/tag/"+id
+        let book_name
+        let book_value
+
+        var abstract = ""
+        $.ajax({
+            url: xmlUrl,
+            dataType: 'xml',
+            type: 'GET',
+            timeout: 2000,
+            async: false,
+            success: function (xml) {
+
+                if (xml != null) {
+                    var elements = xml.getElementsByTagName("abstract");
+                    abstract = elements[0].firstChild.nodeValue
+                }
+            }
+        });
+
+
+        let keyword
+        // 记录选中的标签id
+        let tag_id = ''
+
+        //查询关键词
+        $.get(searchKeyWordUrl, function (data) {
+            keyword = data.data;
+
+            for (let i in keyword) {
+                $('.keyword_sub_word').append('<div class="keyword_word_info"><div>' + keyword[i] + '</div><div class="del_keyword" data-id="' + i + '"><img src="$URL_PREFIX[resources/img/catalog/delete.png]" alt=""></div></div>')
+            }
+        })
+
+        // 添加关键字
+        $('.modal-footer #saveBtn').click(function () {
+            // 获取输入内容
+            let value = $('.modal-body input').val()
+            if (!value) return
+            if (keyword.indexOf(value) != -1){
+                alert("该标签已存在");
+                return;
+            }
+            keyword.push(value)
+            //保存关键字
+            $.ajax({
+                    url: updateKeyWordUrl, // 目标资源
+                    cache: false, //true 如果当前请求有缓存的话，直接使用缓存。如果该属性设置为 false，则每次都会向服务器请求
+                    async: false, //默认是true，即为异步方式-
+                    data: JSON.stringify(
+                        keyword),
+                    dataType: "json", // 服务器响应的数据类型
+                    type: "POST", // 请求方式
+                    contentType: "application/json;charset=utf-8",
+                    success: function (data) {
+                    }
+                }
+            )
+            let it_index = keyword.length - 1
+            $('.keyword_sub_word').append('<div class="keyword_word_info"><div>' + value + '</div><div class="del_keyword" data-id="' + it_index + '"><img src="$URL_PREFIX[resources/img/catalog/delete.png]" alt=""></div></div>')
+            // 关闭modal
+            $('.modal').modal('hide')
+            $('.modal-body input').prop('value', '')
+        })
+        // 取消
+        $('.pop_cancle').click(function () {
+            $('.mask_layer').addClass('mask_hidden')
+            $('.mask_layer0').addClass('mask_hidden')
+        })
+        // 删除
+        $('.pop_del').click(function () {
+            $('.keyword_sub_word>div').eq(tag_id).remove()
+            keyword.splice(tag_id, 1)
+            $.ajax({
+                    url: updateKeyWordUrl, // 目标资源
+                    cache: false, //true 如果当前请求有缓存的话，直接使用缓存。如果该属性设置为 false，则每次都会向服务器请求
+                    async: false, //默认是true，即为异步方式-
+                    data: JSON.stringify(
+                        keyword),
+                    dataType: "json", // 服务器响应的数据类型
+                    type: "POST", // 请求方式
+                    contentType: "application/json;charset=utf-8",
+                    success: function (data) {
+                    }
+                }
+            )
+            $('.mask_layer').addClass('mask_hidden')
+        })
+
+        $(document).on('click', '.del_keyword', function () {
+            //if($(".keyword_word_info").length==1){
+            //	$('.mask_layer0').removeClass('mask_hidden')
+            //}else{
+            tag_id = $(this).parents(".keyword_word_info").index()
+            $('.mask_layer').removeClass('mask_hidden')
+            //}
+        })
+
+
+        $.get(url, function (data) {
+            let info = data.data;
+
+            $('.left_info_img>img').attr('src', info.cover + "&ht=362&wd=260")
+            $('.left_info_text div:nth-child(1)').text('选题编号: ' + info.select_topic_id)
+            $('.left_info_text div:nth-child(2)').text('图书类型: ' + info.select_topic_category)
+            $('.left_info_text div:nth-child(3)').text('ISBN国内统一书号: ' + info.isbn)
+            $('.left_info_text div:nth-child(4)').text('作者: ' + info.first_author)
+            $('.left_info_text div:nth-child(5)').text('出版单位: ' + info.publisher)
+            $('.left_info_text div:nth-child(6)').text('版次年月: ' + info.edition_date)
+            $('.left_info_text div:nth-child(7)').text('版次: ' + info.edition_new)
+
+            $('.info_top_title').text(info.select_topic_name)
+            $('.info_subject').text('科目: ' + info.subject)
+            $('.info_author_two').text('选题类别: ' + info.select_topic_category)
+            $('.info_edit').text('责任编辑: ' + info.editor_name)
+            $('.info_source_from').text('资源来源: ' + info.editorial_office)
+            $('.info_mark').text('摘要: ' + abstract)
+
+
+            $('.log_box div:nth-child(1)').text("图书选题元数据")
+            $('.log_box div:nth-child(2)').text('选题编号: ' + info.select_topic_id)
+            $('.log_box div:nth-child(3)').text('选题名称: ' + info.select_topic_name)
+            $('.log_box div:nth-child(4)').text('丛书名: ' + info.book_name)
+            $('.log_box div:nth-child(5)').text('开列书名: ' + info.tied_title)
+            $('.log_box div:nth-child(6)').text('合作出版者: ' + info.copublisher)
+            $('.log_box div:nth-child(7)').text('选题类别: ' + info.select_topic_category)
+            $('.log_box div:nth-child(8)').text('编辑室: ' + info.editorial_office)
+            $('.log_box div:nth-child(9)').text('第一作者: ' + info.first_author)
+            $('.log_box div:nth-child(10)').text('第一著作方式: ' + info.first_author_type)
+            $('.log_box div:nth-child(11)').text('责任编辑编号: ' + info.editor_number)
+            $('.log_box div:nth-child(12)').text('责任编辑名称: ' + info.editor_name)
+
+            $('.log_box div:nth-child(13)').text('编订类型: ' + info.compile_category)
+            $('.log_box div:nth-child(14)').text('产品分类: ' + info.product_type)
+            $('.log_box div:nth-child(15)').text('产品类型: ' + info.product_category)
+            $('.log_box div:nth-child(16)').text('产品细类: ' + info.product_sub_category)
+            $('.log_box div:nth-child(17)').text('ISBN: ' + info.isbn)
+            $('.log_box div:nth-child(18)').text('上一版ISBN: ' + info.prev_version_ison)
+            $('.log_box div:nth-child(19)').text('使用年度: ' + info.using_year)
+            $('.log_box div:nth-child(20)').text('使用季别: ' + info.using_season)
+            $('.log_box div:nth-child(21)').text('阶段: ' + info.phase)
+            $('.log_box div:nth-child(22)').text('教材学制: ' + info.educational_system)
+            $('.log_box div:nth-child(23)').text('册次: ' + info.amount)
+            $('.log_box div:nth-child(24)').text('使用年级: ' + info.using_grade)
+            $('.log_box div:nth-child(25)').text('学科: ' + info.subject)
+            $('.log_box div:nth-child(26)').text('引进版权: ' + info.import_copyright)
+            $('.log_box div:nth-child(27)').text('书稿来源: ' + info.manuscript_source)
+            $('.log_box div:nth-child(28)').text('重点类型: ' + info.key_category)
+            $('.log_box div:nth-child(29)').text('版次年月: ' + info.edition_date)
+            $('.log_box div:nth-child(30)').text('版次: ' + info.edition_new)
+            $('.log_box div:nth-child(31)').text('范围: ' + info.scope)
+            $('.log_box div:nth-child(32)').text('产品品种: ' + info.product_kind)
+            $('.log_box div:nth-child(33)').text('载体类型: ' + info.carrier_type)
+            $('.log_box div:nth-child(34)').text('修订说明: ' + info.revision_note)
+
+            $('.log_box div:nth-child(35)').text('聚珍元数据')
+            $('.log_box div:nth-child(36)').text('出版单位: ' + info.publisher)
+            $('.log_box div:nth-child(37)').text('制作单位: ' + info.make_software)
+            $('.log_box div:nth-child(38)').text('加工类别: ' + info.processiong_category)
+            $('.log_box div:nth-child(39)').text('委排单位: ' + info.appoint_unit)
+            $('.log_box div:nth-child(40)').text('工单号: ' + info.work_order_id)
+            $('.log_box div:nth-child(41)').text('开本: ' + info.book_size)
+            $('.log_box div:nth-child(42)').text('色数: ' + info.chromatic_number)
+            $('.log_box div:nth-child(43)').text('成品尺寸: ' + info.finished_size)
+            $('.log_box div:nth-child(44)').text('印张: ' + info.sheet)
+            $('.log_box div:nth-child(45)').text('操作平台: ' + info.orerating_deck)
+            $('.log_box div:nth-child(46)').text('版心尺寸: ' + info.type_area_size)
+
+
+            $('.log_box div:nth-child(47)').text('版次: ' + info.edition)
+            $('.log_box div:nth-child(48)').text('畅流版本: ' + info.cause_version)
+            $('.log_box div:nth-child(49)').text('聚珍—编订类别: ' + info.jz_compile_category)
+            $('.log_box div:nth-child(50)').text('责任出版: ' + info.responsibility_publish)
+            $('.log_box div:nth-child(51)').text('责任制作: ' + info.responsibility_make)
+            $('.log_box div:nth-child(52)').text('责任工艺: ' + info.responsibility_process)
+            $('.log_box div:nth-child(53)').text('责任设计: ' + info.responsibility_design)
+
+
+            //piwik 添加图书书名事件
+
+            _paq.push(['trackEvent','cmBookName',info.select_topic_name+','+info.select_topic_id]);
+
+
+            let texts = info.text;
+            images = info.image;
+            let annexs = info.annex;
+
+
+            for (let i of texts) {
+                if (W_width < 760) {
+                    $('.catalog_accessory ul').append('<li class="d-flex align-content-center"><div class="box_m"><div><img src="$URL_PREFIX[resources/img/catalog/pdf.png]" alt=""></div><div class="statistics_word">' + i.name + '</div></div><div class="box_m0"><div class="statistics_word">' + i.size + '</div><div class="statistics_word"> 正文低精度PDF</div></div></li>')
+                } else {
+                    $('.catalog_accessory ul').append('<li class="d-flex align-content-center"><a><div><img src="$URL_PREFIX[resources/img/catalog/pdf.png]" alt=""></div><div class="statistics_word">' + i.name + '</div><div class="statistics_word">' + i.size + '</div><div class="statistics_word">正文低精度PDF</div></a></li>')
+
+                }
+            }
+
+            for (let i of annexs) {
+                if (W_width < 760) {
+                    $('.catalog_accessory ul').append('<li class="d-flex align-content-center"><a><div class="box_m"><div><img src="' + i.url + '" alt=""></div><div class="statistics_word">' + i.name + '</div><div class="statistics_word">' + i.size + '</div></div></a></li>')
+                } else {
+                    $('.catalog_accessory ul').append('<li class="d-flex align-content-center"><a><div><img src="' + i.url + '" alt=""></div><div class="statistics_word">' + i.name + '</div><div class="statistics_word">' + i.size + '</div></a></li>')
+
+                }
+            }
+
+
+            for (let i of images) {
+                if (W_width < 760) {
+                    $('.catalog_accessory ul').append('<li class="d-flex align-content-center"><a><div class="box_m"><div><img src="' + i.url + '" alt=""></div><div class="statistics_word">' + i.name + '</div><div class="statistics_word">' + i.size + '</div></div></a></li>')
+                } else {
+                    $('.catalog_accessory ul').append('<li class="d-flex align-content-center"><a><div><img src="' + i.url + '" alt=""></div><div class="statistics_word">' + i.name + '</div><div class="statistics_word">' + i.size + '</div></a></li>')
+
+                }
+            }
+            // 附件添加点击事件
+            $(document).on("click",".align-content-center",function () {
+                if ($(this).find("div").eq(1).text().indexOf(".pdf") == -1){
+                    $(".mycenter img").attr("src",$(this).find("div img").attr("src"))
+                    $(".mask_layer2").removeClass("mask_hidden")
+                }
+            })
+            $(document).on("click",".pop_del2",function () {
+                $(".mask_layer2").addClass("mask_hidden")
+            })
+
+
+            let bookNameList= ["product_sub_category","subject","using_grade","editor_name","first_author","editorial_office"]
+            let bookLists = [info.product_sub_category, info.subject,info.using_grade, info.editor_name, info.first_author, info.editorial_office]
+            var a = true
+            for (let i in bookLists) {
+                if (bookLists[i]!=null && bookLists[i]!="" && a) {
+                    a = false
+                    $('.right_info_bottom>ul').append('<li class="native" id ='+bookNameList[i]+' >' + bookLists[i] + '</li>')
+                } else if(bookLists[i]!=null && bookLists[i]!=""){
+                    $('.right_info_bottom>ul').append('<li id = '+bookNameList[i]+'>' + bookLists[i] + '</li>')
+                }
+                i++;
+            }
+
+            var books;
+            // 切换学科统计 导航栏
+
+            function aboutBook(book_name,book_value,pageNum,pageSize){
+
+                $.ajax({
+                        url: aboutBookUrl +"/"+ book_name+"/"+book_value+"?pageNum="+pageNum+"&pageSize="+pageSize, // 目标资源
+                        cache: false, //true 如果当前请求有缓存的话，直接使用缓存。如果该属性设置为 false，则每次都会向服务器请求
+                        async: true, //默认是true，即为异步方式-
+                        dataType: "json", // 服务器响应的数据类型
+                        type: "get", // 请求方式
+                        contentType: "application/json;charset=utf-8",
+                        success: function (data) {
+                            totalPage = data.pages
+                            books = data.data;
+                            console.log(books)
+                            $('.info_bottom_img').empty()
+                            if (W_width < 1200) {
+                                for (let j of books.slice(0, 3)) {
+                                    var topicID = j.topicId
+                                    $('.info_bottom_img').append('<div class="info_bottom_img_detail"><div class="update_book"><a href="$PAGE_LINK[catologDetail]topicId=' + topicID + '"><img src="' + j.url + '" alt=""></a></div><div>' + j.bookName + '</div></div>')
+
+                                }
+                            } else {
+                                for (let j of books.slice(0, 6)) {
+                                    var topicID = j.topicId
+
+                                    $('.info_bottom_img').append('<div class="info_bottom_img_detail"><div class="update_book"><a href="$PAGE_LINK[catologDetail]topicId=' + topicID + '"><img src="' + j.url + '" alt=""></a></div><div>' + j.bookName + '</div></div>')
+
+                                }
+                            }
+                        }
+                    }
+                )
+            }
+
+
+            $('.right_info_bottom ul li').click(function () {
+                $(this).siblings('li').removeClass('native')
+                $(this).addClass('native');
+                // 获取当前书签名
+                book_name = $(this)[0].id
+                book_value = $(this)[0].innerText
+
+                aboutBook(book_name,book_value,0,6)
+            })
+
+            $(".right_info_bottom ul li")[0].click();
+
+            function getRandomArrayElements(){
+                $('.recommend_content_two').empty();
+                var pageNum =Math.floor(Math.random()*Math.floor(totalPage));
+                if(pageNum>0){
+                    pageNum--
+                }
+                return pageNum;
+            }
+            // 换一批
+            $('.info_bottom_change').click(function () {
+                // 获取当前书签名
+                book_value = $('.right_info_bottom ul .native')[0].innerText
+                book_name = $('.right_info_bottom ul .native')[0].id
+                //调用换一批接口
+
+                let pageNum = getRandomArrayElements()
+                aboutBook(book_name,book_value,pageNum,6);
+            })
+
+
+        })
+    }
+
+    let W_width = window.screen.width
+    $(document).ready(function () {
+
+
+
+//设置
+        _paq.push(['setUserId',userId]);
+        catalogue();
+        collectBook();
+
+        $(".catalog-img").click(function () {
+            $(".mask_layer3").removeClass("mask_hidden")
+            image()
+        })
+        $(".pop_del3").click(function () {
+            $(".mask_layer3").addClass("mask_hidden")
+        })
+    })
+    function collectBook()
+
+    {
+        $.ajax({
+            url: "http://192.168.190.122:1876/dam-api/personal/mark/"+userId+"/"+id, // 目标资源
+            cache: false, //true 如果当前请求有缓存的话，直接使用缓存。如果该属性设置为 false，则每次都会向服务器请求
+            async: false, //默认是true，即为异步方式-
+
+            dataType: "json", // 服务器响应的数据类型
+            type: "get", // 请求方式
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                console.log(data.code)
+                if(data.code == 200){
+                    $('.collect').append('<img src="$URL_PREFIX[resources/img/index/myCollect_b.png]" alt="" id='+ id +'>')
+                }else{
+                    $('.collect').append('<img src="$URL_PREFIX[resources/img/index/myCollect.png]" alt="" id='+ id +'>')
+                }
+
+            }
+        })
+
+    }
+
+    // 图集功能
+    function image() {
+        // 数据填充
+        for (let i of images){
+            if (W_width < 760){
+                $(".gallery-top>div").append('<div class="swiper-slide" style="background-image:url('+i.url+');max-width:500px;max-height:350px;background-size:100% 100%"></div>')
+            }else{
+                $(".gallery-top>div").append('<div class="swiper-slide" style="background-image:url('+i.url+');max-width:650px;max-height:500px;background-size:100% 100%"></div>')
+            }
+            $(".gallery-thumbs>div").append('<div class="swiper-slide" style="background-image:url('+i.url+');max-width:120px;max-height:100px;background-size:100% 100%"></div>')
+        }
+        var galleryTop = new Swiper('.gallery-top', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 10,
+        });
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true
+        });
+        galleryTop.params.control = galleryThumbs;
+        galleryThumbs.params.control = galleryTop;
+
+    }
+
+
+
+
+
+</script>
+
+

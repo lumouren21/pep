@@ -1,0 +1,56 @@
+<header id="cbs_header">
+    <div class="container-fluid top_content">
+        <div class="row">
+            <div class="col-5 offset-lg-1 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html">
+                    <img src="images/index/logo.png">
+                    <div class="top_content_word">基础资源统一发放平台</div>
+                </a>
+            </div>
+            <div class="col-lg-4 d-lg-block top_seach col-5">
+                <div class="top_input d-flex justify-content-end">
+                    <input type="text" placeholder="请输入关键字" data-provide="typeahead" autocomplete="off"
+                           id="searchWords">
+                    <div class="top_search d-flex align-items-center">
+                        <img src="images/index/search.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile">
+                <div class="top_profile_img">
+                    <img src="images/index/myhead.jpg" alt="">
+                </div>
+                <div class="dropdown show top_arrows">
+                    <img src="images/index/triangle.png" class="dropdown-toggle" id="dropdownMenuLink"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown_content">
+                            <img src="images/index/source.png" alt="">
+                            <a class="dropdown-item" href="mySource.html">我的资源</a>
+                        </div>
+                        <div class="dropdown_content">
+                            <img src="images/index/attention.png" alt="">
+                            <a class="dropdown-item" href="myAttention.html">我的关注</a>
+                        </div>
+                        <div class="dropdown_content">
+                            <img src="images/index/collect.png" alt="">
+                            <a class="dropdown-item" href="myCollect.html">我的收藏</a>
+                        </div>
+                        <div class="dropdown_content">
+                            <img src="images/index/record.png" alt="">
+                            <a class="dropdown-item" href="MyRecord.html">我的记录</a>
+                        </div>
+                        <div class="dropdown_content">
+                            <img src="images/index/download.png" alt="">
+                            <a class="dropdown-item" href="myDownload.html">我的下载</a>
+                        </div>
+                        <div class="dropdown_content top_last_word">
+                            <img src="images/index/logout.png" alt="">
+                            <a class="dropdown-item" href="#">退出登录</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

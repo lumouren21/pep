@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="/css/pep.css"/>
+    <link rel="stylesheet" href="/css/myAttention.css"/>
+    <link rel="stylesheet" href="/css/myUpload.css"/>
+    <script src="../js/pep.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<!--#include file="/common/header.shtml" -->
+<!--导航栏-->
+<!--#include file="/common/navbar.shtml" -->
+
+<!-- 手机导航 -->
+<!--#include file="/common/navbar-mobile.shtml" -->
+<section id="cbs_content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-1 col-10">
+                <div class="page-action">
+                    <a href="index.html" class="btn btn-outline-success">上传</a>
+                </div>
+            </div>
+            <div class="offset-1 col-10 attention_content">
+                <div class="attention_left">
+                    <ul class="attention_left_top">
+                        <li><img src="$URL_PREFIX[resources/img/index/myhead.jpg]" alt=""></li>
+                        <li id="userName"></li>
+                    </ul>
+                    <ul class="attention_left_bottom">
+
+                        <li>
+                            <a href="$PAGE_LINK[resources]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_0.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myResources']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myResources']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="active_m">
+                            <a href="$PAGE_LINK[attention]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_1_active.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myAttention']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myAttention']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="$PAGE_LINK[myCollection]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_2.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myCollect']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myCollect']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="$PAGE_LINK[history]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_3.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myRecord']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myRecord']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="$PAGE_LINK[download]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_4.png]"></div>
+                                <div>
+										<span in-context-edit="$MODEL{/Properties/Data/Datum[@ID='myDownload']/@ID}">
+    										$MODEL{/Properties/Data/Datum[@ID='myDownload']}
+										</span>
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="$PAGE_LINK[upload]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_4.png]"></div>
+                                <div><span>我的上传</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="upload-list" class="attention_right">
+                </div>
+            </div>
+            <div class="offset-1 col-10 d-flex justify-content-center">
+                <ul id="pagination-demo" class="pagination-sm pagination"></ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script id="upload-item-template" type="text/x-handlebars-template">
+    {{#each data}}
+    <div class="attention_right_content">
+        <!--
+        <div class="right_top_action"><a href="edit.html?id={{id}}">编辑</a></div>
+        -->
+        <div class="right_content_img">
+            {{#if url}}
+            <img src="{{url}}"/>
+            {{else}}
+            <div class="other-file-type">其他文件</div>
+            {{/if}}
+        </div>
+        <div class="right_content_text">
+            <div class="right_top">
+                <div class="right_top_text">资源名称: {{name}}</div>
+            </div>
+
+            <div class="right_top_text" style="margin-bottom: 18px;">类型： {{sign}}</div>
+            <div class="right_top_text" style="margin-bottom: 18px;">上传时间： {{date}}</div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<!--尾部-->
+<footer id="cbs_footer">
+    <div class="container-fluid footer_content d-none d-md-block">
+        <div class="row">
+            <div class="footer_text d-flex align-items-center justify-content-center">
+                www.copyright.com 京ICP备09080213号
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/js/upload/list.js"></script>
+
+</body>
+</html>

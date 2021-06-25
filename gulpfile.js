@@ -14,10 +14,12 @@ function js() {
         'src/js/plugins/popper.min.js',
         'src/js/plugins/bootstrap.js',
         'src/js/plugins/bootstrap3-typeahead.js',
+        'src/js/plugins/jquery.twbsPagination.min.js',
         'src/js/plugins/clipboard.js',
         'src/js/plugins/echarts.js',
         'src/js/plugins/jquery.row-grid.js',
         'src/js/plugins/owl.carousel.min.js',
+        'src/js/plugins/handlebars.min-v4.7.7.js',
         'src/js/components/menu.js'
         ], {sourcemaps: true})
         .pipe(concat('pep.min.js'))

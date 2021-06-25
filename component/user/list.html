@@ -1,0 +1,92 @@
+<section id="cbs_content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-1 col-10">
+                <div class="page-action">
+                    <a href="$PAGE_LINK[do-upload]" class="btn btn-outline-success">上传</a>
+                </div>
+            </div>
+            <div class="offset-1 col-10 attention_content">
+                <div class="attention_left">
+                    <ul class="attention_left_top">
+                        <li><img src="$URL_PREFIX[resources/img/index/myhead.jpg]" alt=""></li>
+                        <li id="userName"></li>
+                    </ul>
+                    <ul class="attention_left_bottom">
+
+                        <li>
+                            <a href="$PAGE_LINK[resources]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_0.png]"></div>
+                                <div>
+								我的资源
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="$PAGE_LINK[attention]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_1.png]"></div>
+                                <div>我的关注</div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="$PAGE_LINK[myCollection]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_2.png]"></div>
+                                <div>我的收藏</div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="$PAGE_LINK[history]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_3.png]"></div>
+                                <div>
+							我的足迹
+                                </div>
+                            </a>
+                        </li>
+                        <li  class="active_m">
+                            <a href="$PAGE_LINK[upload]">
+                                <div><img src="$URL_PREFIX[resources/img/person/left_nav_4_active.png]"></div>
+                                <div><span>我的上传</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="upload-list" class="attention_right">
+                </div>
+            </div>
+            <div class="offset-1 col-10 d-flex justify-content-center">
+                <ul id="pagination-demo" class="pagination-sm pagination"></ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script id="upload-item-template" type="text/x-handlebars-template">
+    {{#each data}}
+        <div class="attention_right_content">
+            <!--
+        <div class="right_top_action"><a href="edit.html?id={{id}}">编辑</a></div>
+        -->
+            <div class="right_content_img">
+                {{#if url}}
+                    <img src="{{url}}"/>
+                {{else}}
+                    <div class="other-file-type">其他文件</div>
+                {{/if}}
+            </div>
+            <div class="right_content_text">
+                <div class="right_top">
+                    <div class="right_top_text">资源名称: {{name}}</div>
+                </div>
+
+                <div class="right_top_text" style="margin-bottom: 18px;">类型： {{sign}}</div>
+                <div class="right_top_text" style="margin-bottom: 18px;">上传时间： {{date}}</div>
+            </div>
+        </div>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="/resources/js/upload/list.js"></script>
