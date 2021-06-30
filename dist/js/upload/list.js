@@ -1,5 +1,6 @@
 $(function () {
     queryData(0);
+    $("#userName").text(localStorage.getItem("userId"));
 })
 
 function queryData(pageNum) {
@@ -7,7 +8,7 @@ function queryData(pageNum) {
     var template = Handlebars.compile(item);
     var userId = localStorage.getItem("userId");
     // var url = "http://10.52.16.100:1876/pepapi//resourcesLibrary/myUpload/" + userId + "?pageNum=" + pageNum;
-     var url = "http://192.168.190.122:1876/dam-api/resourcesLibrary/myUpload/" + "ligk"+ "?pageNum=" + pageNum;
+     var url = "http://192.168.190.122:1876/dam-api/resourcesLibrary/myUpload/" + userId + "?pageNum=" + pageNum;
 
     $.get(url, function (result, status) {
         var html = template(result);

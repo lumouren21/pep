@@ -25,60 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6b97a07-be9f-481c-a965-36facb788a8f" name="Default Changelist" comment="修复样式">
-      <change afterPath="$PROJECT_DIR$/component/catelog/catelogDetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/common/header.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/common/header.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/common/navbar.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/common/script.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/common/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/user/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/user/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/common_function.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/common/footer.shtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/common/header.shtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/common/navbar-mobile.shtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/common/navbar.shtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/common/user/leftNav.shtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/myAttention.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/myRecord.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/myUpload.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/handlebars.min-v4.7.7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/jquery.twbsPagination.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/upload/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/upload/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/upload/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/upload/import.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/upload/importtemplate.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/upload/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/param.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/plugins/handlebars.min-v4.7.7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/plugins/jquery.twbsPagination.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/vcgDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/component/left-nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/component/upload.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/plugins/font-awesome.min.css" afterDir="false" />
+    <list default="true" id="c6b97a07-be9f-481c-a965-36facb788a8f" name="Default Changelist" comment="调整样式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/pageDetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pageDetail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/PageDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PageDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/pep.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/pep.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/pep.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/pep.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/upload/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/upload/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/catalogInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/catalogInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/component/hot-book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/component/hot-book.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/pep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pep.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/upload/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/upload/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/upload/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/upload/upload.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +164,7 @@
       <workItem from="1623810130777" duration="11346000" />
       <workItem from="1624246202588" duration="25176000" />
       <workItem from="1624506380722" duration="4024000" />
-      <workItem from="1624546058313" duration="13117000" />
+      <workItem from="1624546058313" duration="16566000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1621320705019</created>
@@ -258,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623131237730</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="调整样式">
+      <created>1624591458195</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1624591458195</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +254,8 @@
     <MESSAGE value="修复样式，添加masonry" />
     <MESSAGE value="修改视觉中国大家都再搜样式" />
     <MESSAGE value="修复样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复样式" />
+    <MESSAGE value="调整样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整样式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
