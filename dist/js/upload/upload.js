@@ -1,5 +1,5 @@
 {
-    $("#userName").text(localStorage.getItem("userId"));
+    $("#userName").text(localStorage.getItem("userName"));
 
     let files = [];
     let isUploadFileStatus = false;

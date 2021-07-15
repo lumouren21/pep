@@ -4,11 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>页面详情</title>
-    <link rel="stylesheet" href="../src/sass/plugins/bootstrap.css">
-    <link rel="stylesheet" href="../src/sass/plugins/normalize.css">
-    <link rel="stylesheet" href="../css/common_function.css">
-    <link rel="stylesheet" href="../css/myAttention.css">
-    <link rel="stylesheet" href="../css/pageDetail.css">
+    <link rel="stylesheet" href="/css/pep.css"/>
     <style>
         @media (min-width: 1200px) {
             #searchBox {
@@ -19,81 +15,12 @@
 </head>
 <body>
 <!--头部-->
-<header id="cbs_header">
-    <div class="container-fluid top_content">
-        <div class="row">
-            <div class="col-5 offset-lg-1 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start">
-                <a href="material.html">
-                    <img src="images/index/logo.png">
-                    <div class="top_content_word">资源统一服务平台</div>
-                </a>
-            </div>
-            <div class="col-lg-4 d-lg-block top_seach col-5">
-
-            </div>
-            <div class="col-2 col-lg-2 d-flex justify-content-end justify-content-lg-center align-items-center top_profile">
-                <div class="top_profile_img">
-                    <img src="images/index/myhead.jpg" alt="">
-                </div>
-                <div class="dropdown show top_arrows">
-                    <img src="images/index/triangle.png" class="dropdown-toggle" id="dropdownMenuLink"
-                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                        <div class="dropdown_content top_last_word">
-                            <img src="images/index/logout.png" alt="">
-                            <a class="dropdown-item" href="#">退出登录</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+<!--#include file="/common/header.shtml"-->
 <!--导航栏-->
-<section id="cbs_nav">
-    <div class="container-fluid bottom_content">
-        <div class="row">
-            <div class="offset-2 col-4 col-lg-4 offset-lg-3 nav_width nav_box">
-                <ul class="d-flex text-center bottom_ul">
-                    <li><a href="material.html">搜索</a></li>
-                    <li><a href="myCollect1.html">我的收藏</a></li>
-                    <li><a href="myDownload1.html">我的下载</a></li>
-                    <li><a href="MyRecord1.html">我的记录</a></li>
-                </ul>
-            </div>
-
-            <button onclick="open_menu()" type="button" class="hamburger is-closed animated fadeInLeft">
-                <span class="hamb-top"></span>
-                <span class="hamb-middle"></span>
-                <span class="hamb-bottom"></span>
-            </button>
-        </div>
-    </div>
-</section>
-<div class="overlay" onclick="close_menu()"></div>
+<!--#include file="/common/navbar.shtml"-->
 
 <!-- 手机导航 -->
-<nav class="navbar navbar-inverse navbar-fixed-top navbar-box" id="sidebar-wrapper" role="navigation">
-    <ul class="nav sidebar-nav">
-        <li class="sidebar-brand">
-            <a href="#">
-                菜单
-            </a>
-        </li>
-        <li>
-            <a href="material.html"><i class="fa fa-fw fa-home"></i> 搜索</a>
-        </li>
-        <li>
-            <a href="myCollect1.html"><i class="fa fa-fw fa-home"></i> 我的收藏</a>
-        </li>
-        <li>
-            <a href="myDownload1.html"><i class="fa fa-fw fa-home"></i> 我的下载</a>
-        </li>
-        <li>
-            <a href="MyRecord1.html"><i class="fa fa-fw fa-bank"></i>我的记录</a>
-        </li>
-    </ul>
-</nav>
+<!--#include file="/common/navbar-mobile.shtml"-->
 <!-- 详细内容 -->
 <section id="cbs_info">
     <div class="container">
@@ -193,13 +120,7 @@
 </div>
 <div class="bgBox">
 </div>
-<script src="../src/js/plugins/jquery-3.1.1.min.js"></script>
-<script src="../src/js/plugins/jquery.row-grid.js"></script>
-<script src="../src/js/plugins/popper.min.js"></script>
-<script src="../src/js/plugins/bootstrap.min.js"></script>
-<script src="../src/js/plugins/bootstrap3-typeahead.js"></script>
-<script src="src/jsx.js"></script>
-<script src="../src/js/PageDetails.js"></script>
-<script src="../src/js/plugins/clipboard.js"></script>
+<script src="/js/pep.min.js"/>
+<script src="..//src/js/PageDetails.js"></script>
 </body>
 </html>

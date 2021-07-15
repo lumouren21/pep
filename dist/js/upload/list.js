@@ -1,6 +1,6 @@
 $(function () {
     queryData(0);
-    $("#userName").text(localStorage.getItem("userId"));
+    $("#userName").text(localStorage.getItem("userName"));
 })
 
 function queryData(pageNum) {

@@ -1,0 +1,519 @@
+* {
+    padding: 0; /*清除内边距*/
+    margin: 0; /*清除外边距*/
+    font: "微软雅黑";
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #DEE1E6;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #C62D26;
+    text-decoration: none;
+}
+
+a:active {
+    color: #DEE1E6;
+    text-decoration: none;
+}
+
+.backgroundWhite {
+    background: white;
+}
+
+.titleDiv {
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #EFEFEF
+}
+
+.redSpan {
+    color: #D56761;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button {
+    border: 0px;
+    background: #E07F46;
+    color: white;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+}
+#pdfViewer {
+    height: 90vh;
+    border: none;
+}
+
+#testC{
+    padding: 0;
+}
+#enclosureBtn {
+    background: #C62D26;
+}
+
+#downloadBtn {
+    background: #B69B6C;
+}
+
+.enclosureUL li {
+    padding-top: 22px;
+}
+
+.enclosureUL a {
+    font-size: 18px;
+}
+
+.bookInfo {
+    height: 100%;
+}
+
+/**
+ * 有些XML会用到的css
+ */
+.menu {
+    position: fixed;
+    top: 30%;
+    z-index: 100;
+}
+
+.menu a {
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+    text-align: center;
+}
+
+.menu a h4 {
+    margin: 0;
+    padding: 15px;
+    margin-right: 5px;
+    color: white;
+    background-color: #B69B6C;
+}
+
+.menu .active {
+    background-color: white;
+    border-top: 2px solid #C9362E;
+    border-left: 2px solid #C9362E;
+    border-bottom: 2px solid #C9362E;
+
+}
+
+.menu .active h4 {
+    background-color: white;
+    color: #C9362E;
+}
+
+#catalog {
+    position: fixed;
+    left: 71px;
+    top: 30%;
+    border: 2px solid #C9362E;
+    background: #fff;
+    z-index: 3;
+    height: 400px;
+    width: 20%;
+}
+
+#catalog .row {
+    height: 100%;
+}
+
+#catalog .catalogDiv {
+    margin: 2% 0;
+    height: 95%;
+    overflow-y: auto;
+}
+
+.catalogDiv::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0;
+}
+
+.catalogDiv::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #D5D5D5;
+}
+
+#catalog ul {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#catalog ul li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#catalog ul li a p {
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #999999;
+}
+
+#catalog ul li a p span {
+    float: right;
+}
+
+#fontSize {
+    position: fixed;
+    left: 71px;
+    top: calc(30% + 81px);
+    border: 2px solid #C9362E;
+    background: #fff;
+    z-index: 3;
+    height: 75px;
+    width: 50%;
+}
+
+#fontSize a {
+    width: 10px;
+}
+
+#wordCitation {
+    position: fixed;
+    left: 16.66666667%;
+    top: 231px;
+    border: 2px solid #C9362E;
+    background: #fff;
+    z-index: 3;
+    height: 400px;
+    width: 60%;
+}
+
+#wordCitation .row {
+    height: 100%;
+}
+
+.keyWordDiv {
+    height: 100%;
+    border-right: 1px dashed black;
+}
+
+.keyWordTitleDiv {
+    height: 10%;
+}
+
+.keyWordTitleDiv h4 {
+    font-weight: 800;
+}
+
+.keyWordInfoDiv {
+    height: 80%;
+    width: 95%;
+    overflow-y: auto;
+}
+
+.keyWordInfoDiv::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0;
+}
+
+.keyWordInfoDiv::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #D5D5D5;
+}
+
+#wordCitation ul li {
+    margin: 20px 0;
+}
+
+.keyWordInfoDiv a {
+    padding: 5px 20px;
+    border: 1px solid #C9362E;
+    border-radius: 50px;
+    background: #C9362E;
+    color: white;
+}
+
+.searchResultDiv {
+    height: 100%;
+}
+
+.searchDiv {
+    width: 90%;
+    height: 20%;
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+#searchInput {
+    height: 28px;
+    margin-top: 10px;
+    line-height: 28px;
+    border: 1px solid #d2d2d2;
+    border-radius: 50px;
+    padding: 0 36px 0 50px;
+    outline: none;
+    width: 100%;
+}
+
+#searchInput:hover {
+    border: 1px solid #9E9E9E;
+}
+
+.searchBtn {
+    position: absolute;
+    left: 15px;
+    top: 28px;
+}
+
+.searchBtn:hover {
+    cursor: pointer;
+}
+
+.searchInfoDiv {
+    height: 80%;
+}
+
+.searchResultNumDiv {
+    height: 10%;
+    color: #828282;
+}
+
+.searchResultNumDiv p {
+    margin: 10px 0;
+}
+
+.searchInfo {
+    height: 80%;
+    width: 95%;
+    overflow-y: auto;
+}
+
+.searchInfo::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0;
+}
+
+.searchInfo::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #D5D5D5;
+}
+
+.searchInfo ul li {
+    width: 95%;
+    background-color: #F6F6F6;
+    margin: 10px 0;
+}
+
+.borderHidn1 {
+    width: 3px;
+    height: 71px;
+    position: fixed;
+    left: 16.66666667%;
+    top: 152px;
+    background: white;
+    z-index: 4;
+}
+
+.borderHidn2 {
+    width: 3px;
+    height: 71px;
+    position: fixed;
+    left: 16.66666667%;
+    top: 233px;
+    background: white;
+    z-index: 4;
+}
+
+.borderHidn3 {
+    width: 3px;
+    height: 71px;
+    position: fixed;
+    left: 16.66666667%;
+    top: 233px;
+    background: white;
+    z-index: 4;
+}
+
+#upChapter {
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+}
+
+#downChapter {
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+}
+
+#night {
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+}
+
+title {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+author {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+
+para {
+    font-size: 20px;
+    margin: 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-indent: 2em;
+}
+
+/**
+ * 附件样式
+ */
+.bookRelevantDiv {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#pdfUl li a span {
+    margin-left: 1vw;
+}
+
+#pdfUl p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/*小屏幕（平板，大于等于 768px）*/
+@media (min-width: 768px) {
+    .menu {
+        right: 83.333334%;
+        top: 150px;
+    }
+
+    #catalog {
+        left: 16.666667%;
+        top: 150px;
+    }
+
+    #fontSize {
+        left: 16.666667%;
+        width: 20%;
+        top: 231px;
+    }
+
+    #wordCitation {
+        left: 16.666667%;
+        width: 60%;
+    }
+
+    .pageTurning {
+        position: fixed;
+        left: 83.333334%;
+        bottom: 20px;
+    }
+
+    .pageTurning ul li {
+        margin-bottom: 45px;
+    }
+
+    .pageTurning ul li a {
+        padding: 20px 5px;
+        background-color: #F0E1C2;
+        color: white;
+        font-size: 18px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    .menu {
+        right: 91.6666666%;
+    }
+
+    #catalog {
+        left: 8.25%;
+        width: 20%;
+    }
+
+    #fontSize {
+        left: 8.25%;
+        width: 10%;
+    }
+
+    #wordCitation {
+        left: 8.25%;
+        width: 40%;
+    }
+
+    .borderHidn1 {
+        left: 8.25%;
+    }
+
+    .borderHidn2 {
+        left: 8.25%;
+    }
+
+    .borderHidn3 {
+        left: 8.25%;
+    }
+
+    .pageTurning {
+        left: 75.5%;
+    }
+}
+
+
+
