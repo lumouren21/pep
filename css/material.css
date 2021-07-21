@@ -3,7 +3,8 @@
 }
 .top_input {
   height: 38px;
-  margin-top: 20px  5px;
+ /* margin-top: 20px  5px;*/
+	margin-top: 20px;
 }
 .top_input input {
   width: 45%;

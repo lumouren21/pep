@@ -26,27 +26,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6b97a07-be9f-481c-a965-36facb788a8f" name="Default Changelist" comment="修复上传功能">
-      <change afterPath="$PROJECT_DIR$/dist/css/bookRead.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/PageDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/bookRead.bak.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/bookRead.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/typeahead.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/component/pageDetail.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/index/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/index/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/index/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/index/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/index/06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/index/07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/index/08.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/myAttention.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/myAttention.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/catelog/catelogDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/component/catelog/catelogDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/material.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/material.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyRecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/MyRecord.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/MyRecord1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/MyRecord1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/PageDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/PageDetails.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/catalogInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/catalogInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/pep.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/pep.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/pep.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/pep.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/upload/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/upload/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/upload/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/upload/upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/material.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/material.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/pep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pep.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/myAttention.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/myAttention.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/myCollect.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/myCollect.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/myCollect1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/myCollect1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/myDownload.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/myDownload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/myDownload1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/myDownload1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/mySource.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mySource.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sourceStatistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/sourceStatistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/component/catelog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/component/catelog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/plugins/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/plugins/bootstrap.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +104,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -110,14 +123,23 @@
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\dist\upload" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\项目\pep-frontend\dist\images\index" />
+      <recent name="E:\项目\pep-frontend\dist\images" />
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\src\js" />
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\dist" />
       <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\src\sass" />
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\src" />
-      <recent name="C:\Users\liguo\WebstormProjects\pep-frontend\js\plugins" />
     </key>
   </component>
-  <component name="RunManager" selected="XSLT.Unnamed (1)">
+  <component name="RunManager" selected="JavaScript 调试.search.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pep-frontend/dist/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="search.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pep-frontend/dist/search.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pep-frontend/dist/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed (1)" type="XSLT" factoryName="XSLT" temporary="true">
       <option name="myOutputFile" value="" />
       <option name="myOpenOutputFile" value="false" />
@@ -156,6 +178,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript 调试.search.html" />
+        <item itemvalue="JavaScript 调试.index.html" />
+        <item itemvalue="JavaScript 调试.test.html" />
         <item itemvalue="XSLT.Unnamed (1)" />
         <item itemvalue="XSLT.Unnamed" />
       </list>
@@ -190,6 +215,14 @@
       <workItem from="1626145617208" duration="15906000" />
       <workItem from="1626228071615" duration="807000" />
       <workItem from="1626313317670" duration="707000" />
+      <workItem from="1626320954128" duration="13632000" />
+      <workItem from="1626400972041" duration="5710000" />
+      <workItem from="1626422859010" duration="1388000" />
+      <workItem from="1626424796911" duration="3267000" />
+      <workItem from="1626657023867" duration="6590000" />
+      <workItem from="1626677846226" duration="8138000" />
+      <workItem from="1626744297308" duration="19247000" />
+      <workItem from="1626831303852" duration="1163000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1621320705019</created>
@@ -299,17 +332,6 @@
     <MESSAGE value="调整样式" />
     <MESSAGE value="修复上传功能" />
     <option name="LAST_COMMIT_MESSAGE" value="修复上传功能" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/dist/catalogInfo.html</url>
-          <line>91</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history>
